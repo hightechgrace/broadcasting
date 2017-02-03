@@ -1,0 +1,15 @@
+{
+  "name": "announce",
+  "version": "1.0.0",
+  "description": "Utilities for stream announcements",
+  "main": "test.js",
+  "dependencies": {
+    "tracery-grammar": "^2.7.3",
+    "twit": "^2.2.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Micah"
+}
