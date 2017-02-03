@@ -1,30 +1,13 @@
 """ mi6k
 
-Python module for medium-level interacting with the Media Infrawidget 6000.
-This module allows setting the LED brightnesses, writing data to the VFD,
-and controlling power management.
+Python module for the IEE Century Vacuum Fluorescent Display,
+formerly written for the Media Infrawidget 6000 project.
 
-This module does not handle IR, this is done via LIRC just like any other
-IR device. This module also does not handle layout of information on the VFD,
-or animation of LED brightness.
 """
 #
-# Media Infrawidget 6000
-# Copyright (C) 2004 Micah Dowty <micah@navi.cx>
-#
-#  This library is free software; you can redistribute it and/or
-#  modify it under the terms of the GNU Lesser General Public
-#  License as published by the Free Software Foundation; either
-#  version 2.1 of the License, or (at your option) any later version.
-#
-#  This library is distributed in the hope that it will be useful,
-#  but WITHOUT ANY WARRANTY; without even the implied warranty of
-#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-#  Lesser General Public License for more details.
-#
-#  You should have received a copy of the GNU Lesser General Public
-#  License along with this library; if not, write to the Free Software
-#  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+# Copyright (C) 2004 Micah Elizabeth Scott <micah@navi.cx>
+# Released into the public domain; CC0 1.0 Universal
+# https://creativecommons.org/publicdomain/zero/1.0/
 #
 
 import serial
@@ -152,41 +135,6 @@ class CenturyVFD:
         self.dev.flush()
 
 
-class Lights(object):
-    """Abstraction for the mi6k's front panel lights. They can both be set in one operation
-       using the set() member, or they can be transparently modified using the magic of properties.
-       All brightnesses are normalized to fit the range [0,1]
-       """
-    def __init__(self, dev):
-        self.dev = dev
-        self._white = None
-        self._blue = None
-
-    def set(self, white, blue):
-        pass
-
-    def setWhite(self, white):
-        if self._white != white:
-            self.set(white, self._blue)
-            self._white = white
-            self.dev.flush()
-
-    def setBlue(self, blue):
-        if self._blue != blue:
-            self.set(self._white, blue)
-            self._blue = blue
-            self.dev.flush()
-
-    def getWhite(self):
-        return self._white
-
-    def getBlue(self):
-        return self._blue
-
-    blue = property(getBlue, setBlue)
-    white = property(getWhite, setWhite)
-
-
 class Device:
     """Container for all hardware reachable through the mi6k interface.
        Device is a pattern to search for the device node with.
@@ -194,6 +142,3 @@ class Device:
     def __init__(self, devPattern="/dev/ttyUSB0"):
         self.dev = serial.Serial(devPattern, baudrate=19200)
         self.vfd = CenturyVFD(self.dev)
-        self.lights = Lights(self.dev)
-
-### The End ###

@@ -1,8 +1,7 @@
 """ vfdwidgets
 
 This is a simple text layout system for small character cell displays
-like VFDs and LCDs. It's part of the MI6K project, but it's a self-contained
-module that could be useful elsewhere.
+like VFDs and LCDs.
 
 The two fundamental entities in this layout system are Widgets and Surfaces.
 A Widget displays some bit of information. It may have a fixed size, or it may
@@ -13,22 +12,9 @@ Widgets have a 'gravity' which controls which side of the Surface they 'stick'
 to, and a priority that controls which widgets are hidden if space becomes scarce.
 """
 #
-# Media Infrawidget 6000
-# Copyright (C) 2004 Micah Dowty <micah@navi.cx>
-#
-#  This library is free software; you can redistribute it and/or
-#  modify it under the terms of the GNU Lesser General Public
-#  License as published by the Free Software Foundation; either
-#  version 2.1 of the License, or (at your option) any later version.
-#
-#  This library is distributed in the hope that it will be useful,
-#  but WITHOUT ANY WARRANTY; without even the implied warranty of
-#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-#  Lesser General Public License for more details.
-#
-#  You should have received a copy of the GNU Lesser General Public
-#  License along with this library; if not, write to the Free Software
-#  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+# Copyright (C) 2004 Micah Elizabeth Scott <micah@navi.cx>
+# Released into the public domain; CC0 1.0 Universal
+# https://creativecommons.org/publicdomain/zero/1.0/
 #
 
 from __future__ import division
@@ -547,4 +533,3 @@ if __name__ == "__main__":
     s = Surface(20, 5, w)
     s.show()
 
-### The End ###
