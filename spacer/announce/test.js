@@ -9,7 +9,6 @@ var grammar = tracery.createGrammar({
 
 	'stream': [ 'stream', 'stream', 'stream', 'live stream', 'broadcast', 'vid stream', 'livestream' ],
 	'started': [ 'started', 'started', 'started', 'going', 'going', 'up' ],
-	'shop': [ 'shop', 'shop', 'lab', 'electronics lab' ],
 	'exclam': [ '!', '!', '!', '!', '!', '~', '.', '.', '.', '.', '!!' ],
 	'excomma': [ ',', '#exclam#' ],
 	'excite': [ 'wow', 'whoa', 'neat', 'woww', 'cool' ],
@@ -22,7 +21,6 @@ var grammar = tracery.createGrammar({
 		'Streaming now#exclam#',
 		'#stream.capitalize# time#exclam#',
 		'Broadcasting LIVE#exclam#',
-		'Going LIVE from the #shop##exclam#',
 	],
 
 	'continuing': [
@@ -33,13 +31,10 @@ var grammar = tracery.createGrammar({
 	],
 
 	'content': [
-		'#firstContent.capitalize#, #secondContent#, and #lastContent##exclam#',
-		'#firstContent.capitalize# & #lastContent##exclam#',
 		'#firstContent.capitalize# & #lastContent##exclam#',
 	],
 
-	'firstContent': [ 'electronics', 'electronics', 'hardware', 'hardware', 'engineering', 'widgets', 'circuits' ],
-	'secondContent': [ 'video', 'experiments', 'science', 'learning something new', 'warm socks' ],
+	'firstContent': [ 'widgets', 'things', 'ephemera', 'widgits', 'oddities' ],
 	'lastContent': [ 'cat', 'cat', 'cat', 'kitty', 'little tiger', 'purr monster', 'fluff tiger' ],
 
 	'first_tweet': ['#starting# #content# #url#'],
