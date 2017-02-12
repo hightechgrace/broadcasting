@@ -64,11 +64,11 @@ class ResourcePoller(threading.Thread):
 
 
 class ClockWidget:
-    def __init__(self, format='%l:%M:%S %p'):
+    def __init__(self, format='%l:%M:%S%p'):
         self.format = format
 
     def __str__(self):
-        return time.strftime(self.format).strip()
+        return time.strftime(self.format).strip().lower()
 
 
 class FileSizePoller(ResourcePoller):
