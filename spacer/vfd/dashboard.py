@@ -11,7 +11,9 @@ import mi6k
 import textwrap
 from dashwidgets import *
 
-widgets = [
+brightnessLevels = (0.0, 1.0)
+
+dash = [
     FileSizePoller('cb', '/mnt/colorburst'),
     FileSizePoller('aud', '/mnt/cylindroid/vidblog Project'),
     FileSizePoller('fsh', '/mnt/cylindroid/Game Capture HD Library'),
@@ -21,14 +23,22 @@ widgets = [
     ProcessPoller('#senrio', 'announce/senrio.js'),
     ProcessPoller('#scanlime', 'announce/scanlime.js'),
     ProcessPoller('+ffm', 'ffmpeg'),
-    ClockWidget()
+]
+
+screensaver = [
+    ClockWidget(),
 ]
 
 vfd = mi6k.Device().vfd
-vfd.powerOn()
-vfd.setBrightness(0.2)
+
+def widgetTexts(w):
+    return filter(None, map(str, w))
+
+def wrapScreen(texts):
+    return '\n'.join(textwrap.wrap(' '.join(texts), mi6k.CenturyVFD.width)[:mi6k.CenturyVFD.lines])
 
 while 1:
-    texts = ' '.join(filter(None, map(str, widgets)))
-    screen = '\n'.join(textwrap.wrap(texts, mi6k.CenturyVFD.width)[:mi6k.CenturyVFD.lines])
-    vfd.writeScreen(screen)
+    dashTexts = widgetTexts(dash)
+    screensaverTexts = widgetTexts(screensaver)
+    vfd.setBrightness(brightnessLevels[len(dashTexts) != 0])
+    vfd.writeScreen(wrapScreen(dashTexts + screensaverTexts))
