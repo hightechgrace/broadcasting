@@ -8,19 +8,27 @@
 #
 
 import mi6k
-from vfdwidgets import *
+import textwrap
 from dashwidgets import *
+
+widgets = [
+    FileSizePoller('cb', '/mnt/colorburst'),
+    FileSizePoller('aud', '/mnt/cylindroid/vidblog Project'),
+    FileSizePoller('fsh', '/mnt/cylindroid/Game Capture HD Library'),
+    FileSizePoller('br', '/mnt/brassica'),
+    FileSizePoller('cyo', '/mnt/cylindroid/obs'),
+    ProcessPoller('#test', '/home/micah/announce/test.js'),
+    ProcessPoller('#senrio', '/home/micah/announce/senrio.js'),
+    ProcessPoller('#scanlime', '/home/micah/announce/scanlime.js'),
+    ProcessPoller('+ffm', '/usr/local/bin/ffmpeg'),
+    ClockWidget()
+]
 
 vfd = mi6k.Device().vfd
 vfd.powerOn()
 vfd.setBrightness(0.2)
-surface = Surface(20, 2)
-
-surface.add(Clock(gravity=(2, 1)))
-surface.add(FileMonitor('/mnt/colorburst'))
-surface.add(FileMonitor('/mnt/brassica'))
-surface.add(FileMonitor('/mnt/cylindroid'))
 
 while 1:
-    surface.update()
-    vfd.writeLines(surface.draw())
+    texts = ' '.join(filter(None, map(str, widgets)))
+    screen = '\n'.join(textwrap.wrap(texts, mi6k.CenturyVFD.width)[:mi6k.CenturyVFD.lines])
+    vfd.writeScreen(screen)

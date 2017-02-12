@@ -6,16 +6,13 @@
 # https://creativecommons.org/publicdomain/zero/1.0/
 #
 
-from vfdwidgets import Text
 import psutil
-import humanfriendly
-
 import os
 import stat
 import threading
 import time
 
-__all__ = [ 'FileMonitor' ]
+__all__ = [ 'FileSizePoller', 'ProcessPoller', 'ClockWidget' ]
 
 
 def recursive_file_size(path):
@@ -34,18 +31,6 @@ def recursive_file_size(path):
         return total
     if stat.S_ISREG(s.st_mode):
         return s.st_size
-
-
-def format_size(number):
-    if number is None:
-        return '-'
-    return humanfriendly.format_size(number)
-
-
-def format_bitrate(bytes_per_second):
-    if bytes_per_second is None:
-        return '-'
-    return "%.0f Kbps" % ((bytes_per_second * 8) / 1000.0)
 
 
 class ResourcePoller(threading.Thread):
@@ -78,13 +63,23 @@ class ResourcePoller(threading.Thread):
         raise NotImplementedError
 
 
+class ClockWidget:
+    def __init__(self, format='%l:%M:%S %p'):
+        self.format = format
+
+    def __str__(self):
+        return time.strftime(self.format).strip()
+
+
 class FileSizePoller(ResourcePoller):
-    def __init__(self, path, interval=1.0):
+    def __init__(self, label, path, interval=1.25):
         ResourcePoller.__init__(self, interval)
+        self.label = label
         self.path = path
         self.size = None
         self.free = None
         self.rate = None
+        self.start()
 
     def poll(self, dt=None):
         last_size = self.size
@@ -92,26 +87,41 @@ class FileSizePoller(ResourcePoller):
             self.size = recursive_file_size(self.path)
             self.free = psutil.disk_usage(self.path).free
         except OSError:
-            pass
+            return
         if dt and last_size:
             self.rate = (self.size - last_size) / dt
         else:
             self.rate = None
 
-        print format_size(self.size), format_size(self.free), format_bitrate(self.rate)
+    def __str__(self):
+        if self.rate is None:
+            return '!%s' % self.label
+        if self.rate == 0:
+            return ''
+        gbfree = self.free / (1.0*1024*1024*1024)
+        summary = '%s:%.1fM' % (self.label, self.rate / (1.0*1024*1024))
+        if gbfree < 1000:
+            summary += '[%.0f]' % gbfree
+        return summary
 
 
-class FileMonitor(Text):
-    def __init__(self, path,
-                 interval   = 2.0,
-                 gravity    = (-1, -1),
-                 align      = (0.5, 0.5),
-                 priority   = 1,
-                 ):
-        Text.__init__(self, '-'*6, gravity=gravity, align=align, priority=priority)
-        self.poller = FileSizePoller(path, interval)
-        self.poller.start()
+class ProcessPoller(ResourcePoller):
+    def __init__(self, label, pattern, interval=2.5):
+        ResourcePoller.__init__(self, interval)
+        self.label = label
+        self.pattern = pattern
+        self.process = None
+        self.start()
 
-    def update(self, dt):
-        self.text = str(dt)
+    def poll(self, dt=None):
+        for p in psutil.process_iter():
+            if self.pattern in p.cmdline():
+                self.process = p
+                return
+        self.process = None
 
+    def __str__(self):
+        if self.process:
+            return self.label
+        else:
+            return ''
