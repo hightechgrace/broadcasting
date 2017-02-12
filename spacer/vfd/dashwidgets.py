@@ -115,9 +115,10 @@ class ProcessPoller(ResourcePoller):
 
     def poll(self, dt=None):
         for p in psutil.process_iter():
-            if self.pattern in p.cmdline():
-                self.process = p
-                return
+            for arg in p.cmdline():
+                if arg.find(self.pattern) >= 0:
+                    self.process = p
+                    return
         self.process = None
 
     def __str__(self):

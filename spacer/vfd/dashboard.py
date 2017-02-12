@@ -17,10 +17,10 @@ widgets = [
     FileSizePoller('fsh', '/mnt/cylindroid/Game Capture HD Library'),
     FileSizePoller('br', '/mnt/brassica'),
     FileSizePoller('cyo', '/mnt/cylindroid/obs'),
-    ProcessPoller('#test', '/home/micah/announce/test.js'),
-    ProcessPoller('#senrio', '/home/micah/announce/senrio.js'),
-    ProcessPoller('#scanlime', '/home/micah/announce/scanlime.js'),
-    ProcessPoller('+ffm', '/usr/local/bin/ffmpeg'),
+    ProcessPoller('#test', 'announce/test.js'),
+    ProcessPoller('#senrio', 'announce/senrio.js'),
+    ProcessPoller('#scanlime', 'announce/scanlime.js'),
+    ProcessPoller('+ffm', 'ffmpeg'),
     ClockWidget()
 ]
 
