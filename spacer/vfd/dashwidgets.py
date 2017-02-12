@@ -96,7 +96,7 @@ class FileSizePoller(ResourcePoller):
     def __str__(self):
         if self.rate is None:
             return '!%s' % self.label
-        if self.rate == 0:
+        if self.rate <= 0:
             return ''
         gbfree = self.free / (1.0*1024*1024*1024)
         summary = '%s:%.1fM' % (self.label, self.rate / (1.0*1024*1024))
