@@ -25,7 +25,6 @@ dash = [
     ProcessMatch(proc, '#senrio', 'announce/senrio.js'),
     ProcessMatch(proc, '#scanlime', 'announce/scanlime.js'),
     ProcessMatch(proc, '+ffm', 'ffmpeg'),
-    ProcessMatch(proc, '+perl', 'perl'),
 ]
 
 screensaver = [
