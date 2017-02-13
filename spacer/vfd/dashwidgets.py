@@ -11,8 +11,9 @@ import os
 import stat
 import threading
 import time
+import subprocess
 
-__all__ = [ 'FileSizePoller', 'ProcessPoller', 'ClockWidget' ]
+__all__ = [ 'FileSizePoller', 'ProcessPoller', 'ProcessMatch', 'ClockWidget' ]
 
 
 def recursive_file_size(path):
@@ -106,23 +107,24 @@ class FileSizePoller(ResourcePoller):
 
 
 class ProcessPoller(ResourcePoller):
-    def __init__(self, label, pattern, interval=2.5):
+    def __init__(self, interval=1.2):
         ResourcePoller.__init__(self, interval)
-        self.label = label
-        self.pattern = pattern
-        self.process = None
+        self.ps = ''
         self.start()
 
     def poll(self, dt=None):
-        for p in psutil.process_iter():
-            for arg in p.cmdline():
-                if arg.find(self.pattern) >= 0:
-                    self.process = p
-                    return
-        self.process = None
+        # This seems to be much much faster than psutil.process_iter()
+        self.ps = subprocess.check_output(['ps', 'wwax'])
+
+
+class ProcessMatch:
+    def __init__(self, poller, label, pattern):
+        self.poller = poller
+        self.label = label
+        self.pattern = pattern
 
     def __str__(self):
-        if self.process:
+        if self.poller.ps.find(self.pattern) >= 0:
             return self.label
-        else:
-            return ''
+        return ''
+

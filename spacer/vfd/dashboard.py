@@ -13,16 +13,19 @@ from dashwidgets import *
 
 brightnessLevels = (0.0, 1.0)
 
+proc = ProcessPoller()
+
 dash = [
     FileSizePoller('cb', '/mnt/colorburst'),
     FileSizePoller('aud', '/mnt/cylindroid/vidblog Project'),
     FileSizePoller('fsh', '/mnt/cylindroid/Game Capture HD Library'),
     FileSizePoller('br', '/mnt/brassica'),
     FileSizePoller('cyo', '/mnt/cylindroid/obs'),
-    ProcessPoller('#test', 'announce/test.js'),
-    ProcessPoller('#senrio', 'announce/senrio.js'),
-    ProcessPoller('#scanlime', 'announce/scanlime.js'),
-    ProcessPoller('+ffm', 'ffmpeg'),
+    ProcessMatch(proc, '#test', 'announce/test.js'),
+    ProcessMatch(proc, '#senrio', 'announce/senrio.js'),
+    ProcessMatch(proc, '#scanlime', 'announce/scanlime.js'),
+    ProcessMatch(proc, '+ffm', 'ffmpeg'),
+    ProcessMatch(proc, '+perl', 'perl'),
 ]
 
 screensaver = [
