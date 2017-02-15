@@ -55,7 +55,7 @@ class MovieConverter:
                 vf = ('tblend=average,framestep=2,' * log2) + ('setpts=%f*PTS' % (1.0 / (1 << log2)))
                 subprocess.check_call(['ffmpeg', '-c:v', 'h264_cuvid', '-i', input, '-vf', vf, '-an', '-r', '30',
                     '-c:v', 'h264_nvenc', '-profile:v', 'high', '-preset:v', 'default', '-b:v', '12000k', tempout])
-            os.rename(tempout, output)
+                os.rename(tempout, output)
         finally:
             if os.path.isfile(tempout):
                 os.unlink(tempout)
