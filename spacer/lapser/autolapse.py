@@ -71,5 +71,5 @@ if __name__ == '__main__':
         '/mnt/cylindroid/obs'
     ],  '/mnt/colorburst')
     while True:
-        mc.poll()
         time.sleep(5)
+        mc.poll()
