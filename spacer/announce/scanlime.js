@@ -6,6 +6,7 @@ var T = new Twit(require('./scanlime_account.json'))
 var grammar = tracery.createGrammar({
 
 	'url': ['http://www.youtube.com/c/MElizabethScott/live'],
+	'hashtag': ['\\#scanlimelive'],
 
 	'stream': [ 'stream', 'stream', 'stream', 'live stream', 'broadcast', 'vid stream', 'livestream' ],
 	'started': [ 'started', 'started', 'started', 'going', 'going', 'up' ],
@@ -42,8 +43,8 @@ var grammar = tracery.createGrammar({
 	'secondContent': [ 'video', 'experiments', 'science', 'learning something new', 'warm socks' ],
 	'lastContent': [ 'cat', 'cat', 'cat', 'kitty', 'little tiger', 'purr monster', 'fluff tiger' ],
 
-	'first_tweet': ['#starting# #content# #url#'],
-	'periodic_tweet': ['#continuing# #content# #url#']
+	'first_tweet': ['#starting# #content# #hashtag# #url#'],
+	'periodic_tweet': ['#continuing# #content# #hashtag# #url#']
 });
 
 grammar.addModifiers(tracery.baseEngModifiers);
@@ -67,4 +68,4 @@ function tweet(template) {
 }
 
 tweet('#first_tweet#');
-setInterval( function () { tweet('#periodic_tweet#'); }, 45 * 60 * 1000);
+setInterval( function () { tweet('#periodic_tweet#'); }, 50 * 60 * 1000);
