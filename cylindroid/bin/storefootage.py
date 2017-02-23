@@ -1,0 +1,58 @@
+#!/usr/bin/env python
+
+import os, sys, time, shutil
+
+if len(sys.argv) < 3:
+    print "usage: %s source_files... target_directory" % sys.argv[0]
+    sys.exit(1)
+
+source_files = sys.argv[1:-1]
+target_directory = sys.argv[-1]
+
+if not os.path.isdir(target_directory):
+    print "not a directory: %s" % target_directory
+    sys.exit(1)
+
+ops = []
+
+def process_file(src_file):
+    if src_file[0] == '.':
+        return
+    if os.path.basename(src_file) == 'old':
+        return
+
+    if os.path.isdir(src_file):
+        for f in os.listdir(src_file):
+            process_file(os.path.join(src_file, f))
+        return
+
+    if os.path.isfile(src_file) and os.path.splitext(src_file)[1] in ('.mov', '.m4a', '.mp4', '.m4v', '.aif', '.wav'):
+        ctime = time.localtime(os.stat(src_file).st_ctime)
+        dir_label = time.strftime('%Y%m%d', ctime)
+        file_label = time.strftime('%H%M%S_', ctime)
+
+        dest_dir = os.path.join(target_directory, dir_label)
+        if not os.path.isdir(dest_dir):
+            os.mkdir(dest_dir)
+
+        dest_file = os.path.join(dest_dir, file_label + os.path.basename(src_file))
+
+        if not os.path.isfile(dest_file):
+            ops.append((src_file, dest_file))
+            print('preparing move: %s -> %s' % (src_file, dest_file))
+
+def atomic_move(src_file, dest_file):
+    temp_file = dest_file + '-temp'
+    old_file = src_file + '-old'
+    shutil.copy2(src_file, temp_file)
+    os.rename(temp_file, dest_file)
+    assert os.stat(src_file).st_size == os.stat(dest_file).st_size
+    os.rename(src_file, old_file)
+    print('finished: %s -> %s' % (src_file, dest_file))
+
+for src_file in source_files:
+    process_file(src_file)
+
+for src_file, dest_file in ops:
+    atomic_move(src_file, dest_file)
+
