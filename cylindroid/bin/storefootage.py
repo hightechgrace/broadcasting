@@ -26,7 +26,7 @@ def process_file(src_file):
             process_file(os.path.join(src_file, f))
         return
 
-    if os.path.isfile(src_file) and os.path.splitext(src_file)[1] in ('.mov', '.m4a', '.mp4', '.m4v', '.aif', '.wav'):
+    if os.path.isfile(src_file) and os.path.splitext(src_file)[1].lower() in ('.mov', '.m4a', '.mp4', '.m4v', '.aif', '.wav'):
         ctime = time.localtime(os.stat(src_file).st_ctime)
         dir_label = time.strftime('%Y%m%d', ctime)
         file_label = time.strftime('%H%M%S_', ctime)
