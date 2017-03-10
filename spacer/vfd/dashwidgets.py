@@ -101,7 +101,7 @@ class FileSizePoller(ResourcePoller):
             return ''
         gbfree = self.free / (1.0*1024*1024*1024)
         summary = '%s:%.1fM' % (self.label, self.rate / (1.0*1024*1024))
-        if gbfree < 1000:
+        if gbfree < 100:
             summary += '[%.0f]' % gbfree
         return summary
 
