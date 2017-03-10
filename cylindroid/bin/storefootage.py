@@ -14,6 +14,7 @@ if not os.path.isdir(target_directory):
     sys.exit(1)
 
 ops = []
+cleanup_queue = []
 
 def process_file(src_file):
     if src_file[0] == '.':
@@ -48,6 +49,7 @@ def atomic_move(src_file, dest_file):
     os.rename(temp_file, dest_file)
     assert os.stat(src_file).st_size == os.stat(dest_file).st_size
     os.rename(src_file, old_file)
+    cleanup_queue.append(old_file)
     print('finished: %s -> %s' % (src_file, dest_file))
 
 for src_file in source_files:
@@ -56,3 +58,8 @@ for src_file in source_files:
 for src_file, dest_file in ops:
     atomic_move(src_file, dest_file)
 
+for old_file in cleanup_queue:
+    try:
+    	os.unlink(old_file)
+    except OSError:
+    	pass
