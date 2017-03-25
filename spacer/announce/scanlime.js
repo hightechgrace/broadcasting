@@ -1,12 +1,12 @@
-var Twit = require('twit')
-var tracery = require('tracery-grammar')
+var Twit = require('twit');
+var tracery = require('tracery-grammar');
 
-var T = new Twit(require('./scanlime_account.json'))
+var tMain = new Twit(require('./scanlime_account.json'));
+var tBot = new Twit(require('./scanlimelive_account.json'));
 
 var grammar = tracery.createGrammar({
 
 	'url': ['http://www.youtube.com/c/MElizabethScott/live'],
-	'hashtag': ['\\#scanlimelive'],
 
 	'stream': [ 'stream', 'stream', 'stream', 'live stream', 'broadcast', 'vid stream', 'livestream' ],
 	'started': [ 'started', 'started', 'started', 'going', 'going', 'up' ],
@@ -43,8 +43,8 @@ var grammar = tracery.createGrammar({
 	'secondContent': [ 'video', 'experiments', 'science', 'learning something new', 'warm socks' ],
 	'lastContent': [ 'cat', 'cat', 'cat', 'kitty', 'little tiger', 'purr monster', 'fluff tiger' ],
 
-	'first_tweet': ['#starting# #content# #hashtag# #url#'],
-	'periodic_tweet': ['#continuing# #content# #hashtag# #url#']
+	'first_tweet': ['#starting# #content# #url#'],
+	'periodic_tweet': ['#continuing# #content# #url#']
 });
 
 grammar.addModifiers(tracery.baseEngModifiers);
@@ -54,12 +54,17 @@ function tweet(template) {
 	do {
 		flat = grammar.flatten(template);
 	} while (flat.length > 140);
-	if (T) {
-		T.post('statuses/update', { status: flat }, function (err, data) {
+	if (tBot) {
+		tBot.post('statuses/update', { status: flat }, function (err, data) {
 			if (err) {
 				console.log(err);
 			} else {
-				console.log('Tweet sent: ' + data.text);
+				console.log('Tweet ' + data.id_str + ' sent: ' + data.text);
+				if (tMain) {
+					tMain.post('statuses/retweet/:id', { id: data.id_str }, function (err, data) {
+						console.log('Retweeted on main account');
+					});
+				}
 			}
 		});
 	} else {
@@ -67,5 +72,6 @@ function tweet(template) {
 	}
 }
 
+//tweet('Just a test, #excite#')
 tweet('#first_tweet#');
 setInterval( function () { tweet('#periodic_tweet#'); }, 50 * 60 * 1000);
