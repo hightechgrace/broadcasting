@@ -74,4 +74,4 @@ function tweet(template) {
 
 //tweet('Just a test, #excite#')
 tweet('#first_tweet#');
-setInterval( function () { tweet('#periodic_tweet#'); }, 50 * 60 * 1000);
+setInterval( function () { tweet('#periodic_tweet#'); }, 80 * 60 * 1000);

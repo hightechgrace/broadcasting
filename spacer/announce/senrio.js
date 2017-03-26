@@ -67,5 +67,5 @@ function tweet(template) {
 }
 
 tweet('#first_tweet#');
-setInterval( function () { tweet('#periodic_tweet#'); }, 45 * 60 * 1000);
+setInterval( function () { tweet('#periodic_tweet#'); }, 95 * 60 * 1000);
 
