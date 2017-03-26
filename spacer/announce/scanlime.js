@@ -50,7 +50,7 @@ var grammar = tracery.createGrammar({
 grammar.addModifiers(tracery.baseEngModifiers);
 
 function upload_latest_image(cb) {
-    var dir = '/tmp';
+    var dir = '/var/rec';
     fs.readdir(dir, function (err, files) {
         if (err) return cb(err);
         // Keyframe-looking files, starting with recent ones
