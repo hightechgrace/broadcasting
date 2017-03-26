@@ -4,6 +4,7 @@
   "description": "Utilities for stream announcements",
   "main": "test.js",
   "dependencies": {
+    "png-js": "^0.1.1",
     "tracery-grammar": "^2.7.3",
     "twit": "^2.2.5"
   },

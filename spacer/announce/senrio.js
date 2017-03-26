@@ -48,6 +48,33 @@ var grammar = tracery.createGrammar({
 
 grammar.addModifiers(tracery.baseEngModifiers);
 
+function upload_latest_image(cb) {
+    var dir = '/tmp';
+    fs.readdir(dir, function (err, files) {
+        if (err) return cb(err);
+        // Keyframe-looking files, starting with recent ones
+        var candidates = files.filter( function (f) {
+            return f.startsWith('kf-') && f.endsWith('.png');
+        });
+        candidates.sort();
+        candidates.reverse();
+        // Last one that successfully parses as an image
+        for (var f of candidates) {
+            var p = path.join(dir, f);
+            var exc;
+            var content;
+            try {
+                PNG.load(p);
+                content = fs.readFileSync(p, { encoding: 'base64' });
+            } catch (exc) {
+                continue;
+            }
+            T.post('media/upload', { media_data: content }, cb);
+            break;
+        }
+    });
+}
+
 function tweet(template) {
 	var flat;
 	do {
@@ -67,5 +94,9 @@ function tweet(template) {
 }
 
 tweet('#first_tweet#');
-setInterval( function () { tweet('#periodic_tweet#'); }, 95 * 60 * 1000);
 
+setInterval( function () {
+    upload_latest_image( function (err, data) {
+        tweet('#periodic_tweet#', [ data.media_id_string ]);
+    });
+}, 95 * 60 * 1000);
