@@ -97,4 +97,4 @@ setInterval( function () {
     upload_latest_image( function (err, data) {
         tweet('#periodic_tweet#', [ data.media_id_string ]);
     });
-}, 4 * 60 * 1000);
+}, 10 * 60 * 1000);
