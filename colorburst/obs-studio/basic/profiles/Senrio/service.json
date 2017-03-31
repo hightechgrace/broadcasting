@@ -1,0 +1,7 @@
+{
+    "settings": {
+        "key": "",
+        "server": "rtmp://10.0.0.10/LOCALSECRETKEYHERE_senrio"
+    },
+    "type": "rtmp_custom"
+}

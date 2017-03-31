@@ -1,0 +1,6 @@
+*.bak
+updates/
+profiler_data/
+plugin_config/
+logs/
+crashes/
