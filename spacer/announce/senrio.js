@@ -1,5 +1,6 @@
 var Twit = require('twit')
 var tracery = require('tracery-grammar')
+var post_screenshot = require('./post-screenshot');
 
 var T = new Twit(require('./senriolabs_account.json'))
 
@@ -48,55 +49,28 @@ var grammar = tracery.createGrammar({
 
 grammar.addModifiers(tracery.baseEngModifiers);
 
-function upload_latest_image(cb) {
-    var dir = '/var/rec';
-    fs.readdir(dir, function (err, files) {
-        if (err) return cb(err);
-        // Keyframe-looking files, starting with recent ones
-        var candidates = files.filter( function (f) {
-            return f.startsWith('kf-') && f.endsWith('.png');
-        });
-        candidates.sort();
-        candidates.reverse();
-        // Last one that successfully parses as an image
-        for (var f of candidates) {
-            var p = path.join(dir, f);
-            var exc;
-            var content;
-            try {
-                PNG.load(p);
-                content = fs.readFileSync(p, { encoding: 'base64' });
-            } catch (exc) {
-                continue;
+function tweet(template, media_ids) {
+    var flat;
+    do {
+        flat = grammar.flatten(template);
+    } while (flat.length > 140);
+    if (T) {
+        T.post('statuses/update', { status: flat, media_ids: media_ids }, function (err, data) {
+            if (err) {
+                console.log(err);
+            } else {
+                console.log('Tweet sent: ' + data.text);
             }
-            T.post('media/upload', { media_data: content }, cb);
-            break;
-        }
-    });
-}
-
-function tweet(template) {
-	var flat;
-	do {
-		flat = grammar.flatten(template);
-	} while (flat.length > 140);
-	if (T) {
-		T.post('statuses/update', { status: flat }, function (err, data) {
-			if (err) {
-				console.log(err);
-			} else {
-				console.log('Tweet sent: ' + data.text);
-			}
-		});
-	} else {
-		console.log(flat);
-	}
+        });
+    } else {
+        console.log(flat);
+    }
 }
 
 tweet('#first_tweet#');
 
 setInterval( function () {
-    upload_latest_image( function (err, data) {
+    post_screenshot( T, function (err, data) {
         tweet('#periodic_tweet#', [ data.media_id_string ]);
     });
 }, 95 * 60 * 1000);
