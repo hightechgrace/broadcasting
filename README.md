@@ -22,12 +22,15 @@ Not sure if anyone else will find this stuff useful, it's here mostly as a backu
    * 4x HDMI switch for sharing this input with other demo objects is `fishplex`.
    * This HDMI input is split to a monitor, HD60 recorder on `cylindroid`, and a USB3.0 HDMI grabber on `colorburst`.
 
-* `cylindroid` is the editing and sound workstation
+* `cylindroid` is the editing and file management workstation
 	* Mac Pro, local thunderbolt RAID for editing and recording
 	* Final Cut Pro X (blah)
+	* Direct recording for oscilloscope (BlackMagic+OBS) and `fishplex` (HD60).
+
+* `squarebot` is the sound workstation
+	* Macbook Air, just the builtin SSD for audio recording
 	* Records multi-channel audio (M-Track 8 + Ableton)
 	* Generates a rough audio mix that's distributed to `colorburst` and the other video recorders.
-	* Direct recording for oscilloscope (BlackMagic+OBS) and `fishplex` (HD60).
 
 * `brassica` is the CAD workstation
    * Rhino license is stuck on this box
