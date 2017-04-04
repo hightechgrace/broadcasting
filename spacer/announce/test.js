@@ -1,8 +1,6 @@
-var fs = require('fs');
-var PNG = require('png-js');
-var path = require('path');
 var Twit = require('twit');
 var tracery = require('tracery-grammar');
+var post_screenshot = require('./post-screenshot');
 
 var T = new Twit(require('./robotbabyhw_account.json'));
 
@@ -46,33 +44,6 @@ var grammar = tracery.createGrammar({
 
 grammar.addModifiers(tracery.baseEngModifiers);
 
-function upload_latest_image(cb) {
-    var dir = '/var/rec';
-    fs.readdir(dir, function (err, files) {
-        if (err) return cb(err);
-        // Keyframe-looking files, starting with recent ones
-        var candidates = files.filter( function (f) {
-            return f.startsWith('kf-') && f.endsWith('.png');
-        });
-        candidates.sort();
-        candidates.reverse();
-        // Last one that successfully parses as an image
-        for (var f of candidates) {
-            var p = path.join(dir, f);
-            var exc;
-            var content;
-            try {
-                PNG.load(p);
-                content = fs.readFileSync(p, { encoding: 'base64' });
-            } catch (exc) {
-                continue;
-            }
-            T.post('media/upload', { media_data: content }, cb);
-            break;
-        }
-    });
-}
-
 function tweet(template, media_ids) {
     var flat;
     do {
@@ -94,7 +65,7 @@ function tweet(template, media_ids) {
 tweet('#first_tweet#');
 
 setInterval( function () {
-    upload_latest_image( function (err, data) {
+    post_screenshot( T, function (err, data) {
         tweet('#periodic_tweet#', [ data.media_id_string ]);
     });
 }, 10 * 60 * 1000);

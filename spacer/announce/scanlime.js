@@ -1,5 +1,6 @@
 var Twit = require('twit');
 var tracery = require('tracery-grammar');
+var post_screenshot = require('./post-screenshot');
 
 var tMain = new Twit(require('./scanlime_account.json'));
 var tBot = new Twit(require('./scanlimelive_account.json'));
@@ -49,40 +50,13 @@ var grammar = tracery.createGrammar({
 
 grammar.addModifiers(tracery.baseEngModifiers);
 
-function upload_latest_image(cb) {
-    var dir = '/var/rec';
-    fs.readdir(dir, function (err, files) {
-        if (err) return cb(err);
-        // Keyframe-looking files, starting with recent ones
-        var candidates = files.filter( function (f) {
-            return f.startsWith('kf-') && f.endsWith('.png');
-        });
-        candidates.sort();
-        candidates.reverse();
-        // Last one that successfully parses as an image
-        for (var f of candidates) {
-            var p = path.join(dir, f);
-            var exc;
-            var content;
-            try {
-                PNG.load(p);
-                content = fs.readFileSync(p, { encoding: 'base64' });
-            } catch (exc) {
-                continue;
-            }
-            T.post('media/upload', { media_data: content }, cb);
-            break;
-        }
-    });
-}
-
-function tweet(template) {
+function tweet(template, media_ids) {
 	var flat;
 	do {
 		flat = grammar.flatten(template);
 	} while (flat.length > 140);
 	if (tBot) {
-		tBot.post('statuses/update', { status: flat }, function (err, data) {
+        tBot.post('statuses/update', { status: flat, media_ids: media_ids }, function (err, data) {
 			if (err) {
 				console.log(err);
 			} else {
@@ -102,7 +76,7 @@ function tweet(template) {
 tweet('#first_tweet#');
 
 setInterval( function () {
-    upload_latest_image( function (err, data) {
-        tweet('#periodic_tweet#', [ data.media_id_string ]);
+    post_screenshot( tBot, function (err, data) {
+        tweet('#periodic_tweet#', [ data.media_id_string ] );
     });
 }, 80 * 60 * 1000);
