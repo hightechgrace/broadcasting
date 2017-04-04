@@ -179,428 +179,23 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [
-                    {
-                        "alt": true,
-                        "key": "OBS_KEY_A",
-                        "shift": true
-                    }
-                ],
-                "libobs.hide_scene_item.DSLR SDI Green": [],
-                "libobs.hide_scene_item.Desk Cam": [],
-                "libobs.hide_scene_item.Fishbowl Grabber": [],
-                "libobs.hide_scene_item.Oscope SDI Red": [],
-                "libobs.hide_scene_item.Tuco SDI Blue": [],
-                "libobs.show_scene_item.DSLR SDI Green": [],
-                "libobs.show_scene_item.Desk Cam": [],
-                "libobs.show_scene_item.Fishbowl Grabber": [],
-                "libobs.show_scene_item.Oscope SDI Red": [],
-                "libobs.show_scene_item.Tuco SDI Blue": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Computer CAD",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 2,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Fishbowl Grabber",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "bicubic",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Desk Cam",
-                        "pos": {
-                            "x": 21.0,
-                            "y": 900.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.33906251192092896,
-                            "y": 0.33888888359069824
-                        },
-                        "scale_filter": "lanczos",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "DSLR SDI Green",
-                        "pos": {
-                            "x": 1448.0,
-                            "y": -10.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.69010990858078003,
-                            "y": 0.69031637907028198
-                        },
-                        "scale_filter": "lanczos",
-                        "visible": false
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Oscope SDI Red",
-                        "pos": {
-                            "x": 1628.0,
-                            "y": 687.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.87734377384185791,
-                            "y": 0.87708336114883423
-                        },
-                        "scale_filter": "lanczos",
-                        "visible": false
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Tuco SDI Blue",
-                        "pos": {
-                            "x": 1847.0,
-                            "y": 895.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.35729166865348816,
-                            "y": 0.35740742087364197
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.DSLR SDI Green": [],
-                "libobs.hide_scene_item.Desk Cam": [],
-                "libobs.hide_scene_item.Fishbowl Grabber": [],
-                "libobs.hide_scene_item.Oscope SDI Red": [],
-                "libobs.hide_scene_item.Tuco SDI Blue": [],
-                "libobs.show_scene_item.DSLR SDI Green": [],
-                "libobs.show_scene_item.Desk Cam": [],
-                "libobs.show_scene_item.Fishbowl Grabber": [],
-                "libobs.show_scene_item.Oscope SDI Red": [],
-                "libobs.show_scene_item.Tuco SDI Blue": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Computer vertical",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 2,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Fishbowl Grabber",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "bicubic",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Desk Cam",
-                        "pos": {
-                            "x": 1732.0,
-                            "y": 503.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.43125000596046448,
-                            "y": 0.43148148059844971
-                        },
-                        "scale_filter": "lanczos",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "DSLR SDI Green",
-                        "pos": {
-                            "x": 1448.0,
-                            "y": -10.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.69010990858078003,
-                            "y": 0.69031637907028198
-                        },
-                        "scale_filter": "lanczos",
-                        "visible": false
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Oscope SDI Red",
-                        "pos": {
-                            "x": 1632.0,
-                            "y": 688.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.87734377384185791,
-                            "y": 0.87708336114883423
-                        },
-                        "scale_filter": "lanczos",
-                        "visible": false
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Tuco SDI Blue",
-                        "pos": {
-                            "x": 1723.0,
-                            "y": 969.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.43593749403953552,
-                            "y": 0.43611112236976624
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 1,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "decklink-input",
-            "mixers": 255,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Tuco SDI Blue",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "buffering": false,
-                "device_hash": "1905448464_DeckLink Duo 2",
-                "device_name": "DeckLink Duo (1)",
-                "mode_id": 7,
-                "mode_name": "1080p30"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 7,
-            "enabled": true,
-            "flags": 1,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "decklink-input",
-            "mixers": 193,
-            "monitoring_type": 0,
-            "muted": true,
-            "name": "uScope SDI White",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "buffering": false,
-                "device_hash": "1905448465_DeckLink Duo 2",
-                "device_name": "DeckLink Duo (2)",
-                "mode_id": 10,
-                "mode_name": "1080i60",
-                "pixel_format": 846624121
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "filters": [
-                {
-                    "deinterlace_field_order": 0,
-                    "deinterlace_mode": 0,
-                    "enabled": true,
-                    "flags": 0,
-                    "hotkeys": {},
-                    "id": "crop_filter",
-                    "mixers": 0,
-                    "monitoring_type": 0,
-                    "muted": false,
-                    "name": "Crop/Pad",
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "settings": {
-                        "top": 30
-                    },
-                    "sync": 0,
-                    "volume": 1.0
-                }
-            ],
-            "flags": 0,
             "hotkeys": {},
-            "id": "window_capture",
+            "id": "browser_source",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Botbreaker VNC",
+            "name": "Live Chat",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "cursor": false,
-                "priority": 1,
-                "window": "botbreaker - TightVNC Viewer:TvnWindowClass:tvnviewer.exe"
+                "css": "body { background-color: rgba(255, 255, 255, 0.9); overflow: hidden; font-size: 18px; }\n.fonts-loaded body { font-family: Corbel; }\n.trpContentPanel { background-color: transparent; }\n.scroller::-webkit-scrollbar { width: 0; }\n.chat-item { margin: 0px; padding: 2px; }\n.chat-item__container { margin: 0; padding: 0; }\n.chat-item__content { margin: 0 0 0 35px; padding: 0; }\n.chat-and-toolbar-wrapper { padding: 0; }\n.right-toolbar-region { display: none; }\n.chat-header { display: none; }\n.chat-input { padding: 0 4px; font-family: courier; min-height: 0; background-color: rgba(0,80,195,0.6); color: #fff; }\n.chat-input__btn { display: none; }\n.chat-input:before { content: \"Join us at https://gitter.im/scanlime/live\"; }\n",
+                "height": 1440,
+                "is_local_file": false,
+                "shutdown": false,
+                "url": "https://gitter.im/scanlime/live/~chat",
+                "width": 480
             },
             "sync": 0,
             "volume": 1.0
@@ -608,385 +203,6 @@
         {
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [
-                    {
-                        "alt": true,
-                        "key": "OBS_KEY_F",
-                        "shift": true
-                    }
-                ],
-                "libobs.hide_scene_item.Analog Capture": [],
-                "libobs.hide_scene_item.DSLR SDI Green": [],
-                "libobs.hide_scene_item.Desk Cam": [],
-                "libobs.hide_scene_item.Oscope SDI Red": [],
-                "libobs.hide_scene_item.Tuco SDI Blue": [],
-                "libobs.hide_scene_item.uScope SDI White": [],
-                "libobs.show_scene_item.Analog Capture": [],
-                "libobs.show_scene_item.DSLR SDI Green": [],
-                "libobs.show_scene_item.Desk Cam": [],
-                "libobs.show_scene_item.Oscope SDI Red": [],
-                "libobs.show_scene_item.Tuco SDI Blue": [],
-                "libobs.show_scene_item.uScope SDI White": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Microscope",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 2,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "uScope SDI White",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Desk Cam",
-                        "pos": {
-                            "x": 1760.0,
-                            "y": 990.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.4166666567325592,
-                            "y": 0.4166666567325592
-                        },
-                        "scale_filter": "lanczos",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Tuco SDI Blue",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 989.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.41718751192092896,
-                            "y": 0.41759258508682251
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "DSLR SDI Green",
-                        "pos": {
-                            "x": 1606.0,
-                            "y": -15.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.56923079490661621,
-                            "y": 0.56951099634170532
-                        },
-                        "scale_filter": "bilinear",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Analog Capture",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 894.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.182703971862793,
-                            "y": 1.1818181276321411
-                        },
-                        "scale_filter": "disable",
-                        "visible": false
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Oscope SDI Red",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.6171875,
-                            "y": 0.61770832538604736
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [
-                    {
-                        "alt": true,
-                        "key": "OBS_KEY_J",
-                        "shift": true
-                    }
-                ],
-                "libobs.hide_scene_item.DSLR SDI Green": [],
-                "libobs.hide_scene_item.Desk Cam": [],
-                "libobs.hide_scene_item.Fishbowl Grabber": [],
-                "libobs.hide_scene_item.Tuco SDI Blue": [],
-                "libobs.hide_scene_item.uScope SDI White": [],
-                "libobs.show_scene_item.DSLR SDI Green": [],
-                "libobs.show_scene_item.Desk Cam": [],
-                "libobs.show_scene_item.Fishbowl Grabber": [],
-                "libobs.show_scene_item.Tuco SDI Blue": [],
-                "libobs.show_scene_item.uScope SDI White": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Computer and Microscope",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 2,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Fishbowl Grabber",
-                        "pos": {
-                            "x": -484.0,
-                            "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "bicubic",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 2,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "uScope SDI White",
-                        "pos": {
-                            "x": 1218.0,
-                            "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Desk Cam",
-                        "pos": {
-                            "x": 1760.0,
-                            "y": 990.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.4166666567325592,
-                            "y": 0.4166666567325592
-                        },
-                        "scale_filter": "lanczos",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Tuco SDI Blue",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 987.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.4192708432674408,
-                            "y": 0.41944444179534912
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "DSLR SDI Green",
-                        "pos": {
-                            "x": 1620.0,
-                            "y": -16.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.56923079490661621,
-                            "y": 0.56951099634170532
-                        },
-                        "scale_filter": "lanczos",
-                        "visible": false
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "window_capture",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "AirServer Window",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "cursor": false,
-                "window": "AirServer® Universal (x64):AirServer#3A#3AMainFrame:AirServer.exe"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 8,
             "enabled": true,
             "filters": [
                 {
@@ -1005,7 +221,7 @@
                     "push-to-talk": false,
                     "push-to-talk-delay": 0,
                     "settings": {
-                        "resolution": "16:9",
+                        "resolution": "4:3",
                         "sampling": "lanczos"
                     },
                     "sync": 0,
@@ -1017,47 +233,48 @@
                     "enabled": true,
                     "flags": 0,
                     "hotkeys": {},
-                    "id": "crop_filter",
+                    "id": "color_filter",
                     "mixers": 0,
                     "monitoring_type": 0,
                     "muted": false,
-                    "name": "Crop/Pad",
+                    "name": "Color Correction",
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
                     "push-to-talk": false,
                     "push-to-talk-delay": 0,
                     "settings": {
-                        "bottom": 18,
-                        "left": 16,
-                        "right": 16,
-                        "top": 0
+                        "brightness": 0.059999999999999998,
+                        "contrast": 0.5,
+                        "gamma": 0.80000000000000004,
+                        "hue_shift": -4.6600000000000001,
+                        "saturation": -0.029999999999999999
                     },
                     "sync": 0,
                     "volume": 1.0
                 }
             ],
-            "flags": 1,
+            "flags": 0,
             "hotkeys": {
                 "libobs.mute": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
                 "libobs.unmute": []
             },
-            "id": "dshow_input",
+            "id": "decklink-input",
             "mixers": 255,
             "monitoring_type": 0,
             "muted": true,
-            "name": "Analog Capture",
+            "name": "Oscope SDI Red",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "last_resolution": "720x480",
-                "last_video_device_id": "AVerMedia USB Polaris Analog Capture:\\\\?\\usb#22vid_07ca&pid_c039&mi_01#226&19534af3&0&0001#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{9b365890-165f-11d0-a195-0020afd156e4}",
-                "res_type": 1,
-                "resolution": "720x480",
-                "video_device_id": "AVerMedia USB Polaris Analog Capture:\\\\?\\usb#22vid_07ca&pid_c039&mi_01#226&19534af3&0&0001#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{9b365890-165f-11d0-a195-0020afd156e4}"
+                "device_hash": "1905448467_DeckLink Duo 2",
+                "device_name": "DeckLink Duo (4)",
+                "mode_id": 16,
+                "mode_name": "720p60",
+                "pixel_format": 846624121
             },
             "sync": 0,
             "volume": 1.0
@@ -1071,22 +288,26 @@
                 "OBSBasic.SelectScene": [
                     {
                         "alt": true,
-                        "key": "OBS_KEY_D",
+                        "key": "OBS_KEY_G",
                         "shift": true
                     }
                 ],
-                "libobs.hide_scene_item.Analog Capture": [],
+                "libobs.hide_scene_item.DSLR SDI Green": [],
                 "libobs.hide_scene_item.Desk Cam": [],
+                "libobs.hide_scene_item.Live Chat": [],
+                "libobs.hide_scene_item.Oscope SDI Red": [],
                 "libobs.hide_scene_item.Tuco SDI Blue": [],
-                "libobs.show_scene_item.Analog Capture": [],
+                "libobs.show_scene_item.DSLR SDI Green": [],
                 "libobs.show_scene_item.Desk Cam": [],
+                "libobs.show_scene_item.Live Chat": [],
+                "libobs.show_scene_item.Oscope SDI Red": [],
                 "libobs.show_scene_item.Tuco SDI Blue": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Analog",
+            "name": "Oscope",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -1096,19 +317,69 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 2189.0,
-                            "y": 1216.0
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds_align": 0,
-                        "bounds_type": 2,
+                        "bounds_type": 0,
                         "crop_bottom": 0,
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "name": "Analog Capture",
+                        "name": "Tuco SDI Blue",
                         "pos": {
-                            "x": 215.0,
-                            "y": 14.0
+                            "x": 1281.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.66614586114883423,
+                            "y": 0.6657407283782959
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Desk Cam",
+                        "pos": {
+                            "x": 0.0,
+                            "y": -21.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.65156251192092896,
+                            "y": 0.6518518328666687
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Live Chat",
+                        "pos": {
+                            "x": 0.0,
+                            "y": -756.0
                         },
                         "rot": 0.0,
                         "scale": {
@@ -1130,15 +401,15 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "name": "Tuco SDI Blue",
+                        "name": "DSLR SDI Green",
                         "pos": {
-                            "x": 0.0,
-                            "y": 970.0
+                            "x": -163.0,
+                            "y": 654.0
                         },
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.43541666865348816,
-                            "y": 0.43518519401550293
+                            "x": 0.88461536169052124,
+                            "y": 0.88494724035263062
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -1155,15 +426,15 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "name": "Desk Cam",
+                        "name": "Oscope SDI Red",
                         "pos": {
-                            "x": 1771.0,
-                            "y": 996.0
+                            "x": 1265.0,
+                            "y": 469.0
                         },
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.41093748807907104,
-                            "y": 0.41111111640930176
+                            "x": 1.01171875,
+                            "y": 1.0114582777023315
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -1177,37 +448,79 @@
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
-            "flags": 1,
+            "flags": 0,
             "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.AirServer Window": [],
+                "libobs.hide_scene_item.Live Chat": [],
+                "libobs.show_scene_item.AirServer Window": [],
+                "libobs.show_scene_item.Live Chat": []
             },
-            "id": "dshow_input",
-            "mixers": 15,
+            "id": "scene",
+            "mixers": 0,
             "monitoring_type": 0,
-            "muted": true,
-            "name": "Fishbowl Grabber",
+            "muted": false,
+            "name": "AirServer",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "active": true,
-                "color_range": "partial",
-                "color_space": "default",
-                "deactivate_when_not_showing": true,
-                "frame_interval": 333333,
-                "last_resolution": "1920x1080",
-                "last_video_device_id": "USB3.0 Capture Video:\\\\?\\usb#22vid_04b4&pid_00f9&mi_00#226&189896f0&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
-                "res_type": 1,
-                "resolution": "1920x1080",
-                "video_device_id": "USB3.0 Capture Video:\\\\?\\usb#22vid_04b4&pid_00f9&mi_00#226&189896f0&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
-                "video_format": 0
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 2560.0,
+                            "y": 1440.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "AirServer Window",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Live Chat",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    }
+                ]
             },
             "sync": 0,
-            "volume": 0.18519300222396851
+            "volume": 1.0
         },
         {
             "deinterlace_field_order": 0,
@@ -1218,22 +531,28 @@
                 "OBSBasic.SelectScene": [
                     {
                         "alt": true,
-                        "key": "OBS_KEY_N",
+                        "key": "OBS_KEY_M",
                         "shift": true
                     }
                 ],
-                "libobs.hide_scene_item.Desk Cam": [],
+                "libobs.hide_scene_item.AirServer Window": [],
+                "libobs.hide_scene_item.Analog Capture": [],
+                "libobs.hide_scene_item.Botbreaker VNC": [],
+                "libobs.hide_scene_item.Fishbowl Grabber": [],
+                "libobs.hide_scene_item.Live Chat": [],
                 "libobs.hide_scene_item.Othermill Cam": [],
-                "libobs.hide_scene_item.Tuco SDI Blue": [],
-                "libobs.show_scene_item.Desk Cam": [],
-                "libobs.show_scene_item.Othermill Cam": [],
-                "libobs.show_scene_item.Tuco SDI Blue": []
+                "libobs.show_scene_item.AirServer Window": [],
+                "libobs.show_scene_item.Analog Capture": [],
+                "libobs.show_scene_item.Botbreaker VNC": [],
+                "libobs.show_scene_item.Fishbowl Grabber": [],
+                "libobs.show_scene_item.Live Chat": [],
+                "libobs.show_scene_item.Othermill Cam": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Othermill and Desk",
+            "name": "Othermill and Closet",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -1252,17 +571,42 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "name": "Desk Cam",
+                        "name": "AirServer Window",
                         "pos": {
-                            "x": 1405.0,
-                            "y": 712.0
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.67395836114883423,
-                            "y": 0.67407405376434326
+                            "x": 0.66319084167480469,
+                            "y": 0.66326528787612915
                         },
                         "scale_filter": "lanczos",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Botbreaker VNC",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 715.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.94371342658996582,
+                            "y": 0.94401043653488159
+                        },
+                        "scale_filter": "bicubic",
                         "visible": true
                     },
                     {
@@ -1277,17 +621,42 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "name": "Tuco SDI Blue",
+                        "name": "Fishbowl Grabber",
                         "pos": {
-                            "x": 1455.0,
+                            "x": 0.0,
+                            "y": 714.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.67239582538604736,
+                            "y": 0.67222219705581665
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Analog Capture",
+                        "pos": {
+                            "x": 0.0,
                             "y": 0.0
                         },
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.66041666269302368,
-                            "y": 0.66018515825271606
+                            "x": 1.5505480766296387,
+                            "y": 1.5497835874557495
                         },
-                        "scale_filter": "disable",
+                        "scale_filter": "bicubic",
                         "visible": true
                     },
                     {
@@ -1304,7 +673,7 @@
                         "crop_top": 0,
                         "name": "Othermill Cam",
                         "pos": {
-                            "x": -402.0,
+                            "x": 971.0,
                             "y": 0.0
                         },
                         "rot": 0.0,
@@ -1313,6 +682,31 @@
                             "y": 1.0
                         },
                         "scale_filter": "bicubic",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Live Chat",
+                        "pos": {
+                            "x": 0.0,
+                            "y": -725.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "lanczos",
                         "visible": true
                     }
                 ]
@@ -1324,34 +718,1077 @@
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
-            "flags": 1,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [
+                    {
+                        "alt": true,
+                        "key": "OBS_KEY_I",
+                        "shift": true
+                    }
+                ],
+                "libobs.hide_scene_item.DSLR SDI Green": [],
+                "libobs.hide_scene_item.Desk Cam": [],
+                "libobs.hide_scene_item.Live Chat": [],
+                "libobs.hide_scene_item.Tuco SDI Blue": [],
+                "libobs.hide_scene_item.uScope SDI White": [],
+                "libobs.show_scene_item.DSLR SDI Green": [],
+                "libobs.show_scene_item.Desk Cam": [],
+                "libobs.show_scene_item.Live Chat": [],
+                "libobs.show_scene_item.Tuco SDI Blue": [],
+                "libobs.show_scene_item.uScope SDI White": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "DSLR",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 2560.0,
+                            "y": 1440.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "uScope SDI White",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Desk Cam",
+                        "pos": {
+                            "x": 1480.0,
+                            "y": 1072.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.5625,
+                            "y": 0.56296294927597046
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Tuco SDI Blue",
+                        "pos": {
+                            "x": 313.0,
+                            "y": 911.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.61562502384185791,
+                            "y": 0.61574071645736694
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "DSLR SDI Green",
+                        "pos": {
+                            "x": 250.0,
+                            "y": -70.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.3939560651779175,
+                            "y": 1.3940556049346924
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Live Chat",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [
+                    {
+                        "alt": true,
+                        "key": "OBS_KEY_K",
+                        "shift": true
+                    }
+                ],
+                "libobs.hide_scene_item.Fishbowl Grabber": [],
+                "libobs.hide_scene_item.Live Chat": [],
+                "libobs.show_scene_item.Fishbowl Grabber": [],
+                "libobs.show_scene_item.Live Chat": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Computer Only",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 2560.0,
+                            "y": 1440.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Fishbowl Grabber",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Live Chat",
+                        "pos": {
+                            "x": 0.0,
+                            "y": -788.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [
+                    {
+                        "alt": true,
+                        "key": "OBS_KEY_E",
+                        "shift": true
+                    }
+                ],
+                "libobs.hide_scene_item.Live Chat": [],
+                "libobs.hide_scene_item.uScope SDI White": [],
+                "libobs.show_scene_item.Live Chat": [],
+                "libobs.show_scene_item.uScope SDI White": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Microscope Only",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 2560.0,
+                            "y": 1440.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "uScope SDI White",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Live Chat",
+                        "pos": {
+                            "x": 0.0,
+                            "y": -974.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "slideshow",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "All slide images",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "files": [
+                    {
+                        "value": "C:/Users/micah/AppData/Roaming/obs-studio/assets/slides"
+                    }
+                ],
+                "randomize": true
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [
+                    {
+                        "alt": true,
+                        "key": "OBS_KEY_B",
+                        "shift": true
+                    }
+                ],
+                "libobs.hide_scene_item.All slide images": [],
+                "libobs.hide_scene_item.Live Chat": [],
+                "libobs.show_scene_item.All slide images": [],
+                "libobs.show_scene_item.Live Chat": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Slides",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 2560.0,
+                            "y": 1440.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "All slide images",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Live Chat",
+                        "pos": {
+                            "x": 0.0,
+                            "y": -1831.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.5083333253860474,
+                            "y": 1.5083333253860474
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [
+                    {
+                        "alt": true,
+                        "key": "OBS_KEY_L",
+                        "shift": true
+                    }
+                ],
+                "libobs.hide_scene_item.DSLR SDI Green": [],
+                "libobs.hide_scene_item.Desk Cam": [],
+                "libobs.hide_scene_item.Fishbowl Grabber": [],
+                "libobs.hide_scene_item.Live Chat": [],
+                "libobs.hide_scene_item.Oscope SDI Red": [],
+                "libobs.hide_scene_item.Tuco SDI Blue": [],
+                "libobs.show_scene_item.DSLR SDI Green": [],
+                "libobs.show_scene_item.Desk Cam": [],
+                "libobs.show_scene_item.Fishbowl Grabber": [],
+                "libobs.show_scene_item.Live Chat": [],
+                "libobs.show_scene_item.Oscope SDI Red": [],
+                "libobs.show_scene_item.Tuco SDI Blue": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Computer",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Live Chat",
+                        "pos": {
+                            "x": 0.0,
+                            "y": -859.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Desk Cam",
+                        "pos": {
+                            "x": -182.0,
+                            "y": 581.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.4140625,
+                            "y": 0.41388890147209167
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Tuco SDI Blue",
+                        "pos": {
+                            "x": -145.0,
+                            "y": 1028.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.38124999403953552,
+                            "y": 0.38148146867752075
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 2560.0,
+                            "y": 1440.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Fishbowl Grabber",
+                        "pos": {
+                            "x": 480.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "bicubic",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "DSLR SDI Green",
+                        "pos": {
+                            "x": 1574.0,
+                            "y": -18.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.60549449920654297,
+                            "y": 0.60594439506530762
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Oscope SDI Red",
+                        "pos": {
+                            "x": 1685.0,
+                            "y": 734.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.828125,
+                            "y": 0.828125
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [
+                    {
+                        "alt": true,
+                        "key": "OBS_KEY_C",
+                        "shift": true
+                    }
+                ],
+                "libobs.hide_scene_item.Live Chat": [],
+                "libobs.hide_scene_item.Tuco SDI Blue": [],
+                "libobs.show_scene_item.Live Chat": [],
+                "libobs.show_scene_item.Tuco SDI Blue": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Tuco",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 2560.0,
+                            "y": 1440.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Tuco SDI Blue",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Live Chat",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [
+                    {
+                        "alt": true,
+                        "key": "OBS_KEY_H",
+                        "shift": true
+                    }
+                ],
+                "libobs.hide_scene_item.Desk Cam": [],
+                "libobs.hide_scene_item.Live Chat": [],
+                "libobs.show_scene_item.Desk Cam": [],
+                "libobs.show_scene_item.Live Chat": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Desk",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 2560.0,
+                            "y": 1440.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Desk Cam",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Live Chat",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "filters": [
+                {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "color_filter",
+                    "mixers": 0,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Color Correction",
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "brightness": 0.059999999999999998,
+                        "color": 16749732,
+                        "contrast": 0.59999999999999998,
+                        "gamma": -0.070000000000000007
+                    },
+                    "sync": 0,
+                    "volume": 1.0
+                },
+                {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "sharpness_filter",
+                    "mixers": 0,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Sharpen",
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "sharpness": 0.14999999999999999
+                    },
+                    "sync": 0,
+                    "volume": 1.0
+                },
+                {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "mask_filter",
+                    "mixers": 0,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Circular Mask",
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "image_path": "C:/Users/micah/AppData/Roaming/obs-studio/assets/masks/othermill-fisheye-mask.png",
+                        "stretch": false,
+                        "type": "mask_alpha_filter.effect"
+                    },
+                    "sync": 0,
+                    "volume": 1.0
+                }
+            ],
+            "flags": 0,
             "hotkeys": {
                 "libobs.mute": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
                 "libobs.unmute": []
             },
-            "id": "dshow_input",
-            "mixers": 0,
+            "id": "ffmpeg_source",
+            "mixers": 15,
             "monitoring_type": 0,
             "muted": true,
-            "name": "Desk Cam",
+            "name": "Othermill Cam",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "active": true,
-                "audio_device_id": "Desktop Microphone (3- Microsoft® LifeCam Studio(TM)):",
-                "last_resolution": "1920x1080",
-                "last_video_device_id": "Logitech HD Pro Webcam C920:\\\\?\\usb#22vid_046d&pid_082d&mi_00#226&11310a23&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{bbefb6c7-2fc4-4139-bb8b-a58bba724083}",
-                "res_type": 1,
-                "resolution": "1920x1080",
-                "use_custom_audio_device": false,
-                "video_device_id": "Logitech HD Pro Webcam C920:\\\\?\\usb#22vid_046d&pid_082d&mi_00#226&11310a23&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{bbefb6c7-2fc4-4139-bb8b-a58bba724083}"
+                "advanced": true,
+                "audio_buffer_size": 1,
+                "force_scale": false,
+                "input": "http://10.0.0.4:8080/?action=stream",
+                "input_format": "MJPEG",
+                "is_local_file": false,
+                "video_buffer_size": 1
+            },
+            "sync": 0,
+            "volume": 0.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [
+                    {
+                        "alt": true,
+                        "key": "OBS_KEY_O",
+                        "shift": true
+                    }
+                ],
+                "libobs.hide_scene_item.Desk Cam": [],
+                "libobs.hide_scene_item.Live Chat": [],
+                "libobs.hide_scene_item.Tuco SDI Blue": [],
+                "libobs.hide_scene_item.TypeA Cam": [],
+                "libobs.show_scene_item.Desk Cam": [],
+                "libobs.show_scene_item.Live Chat": [],
+                "libobs.show_scene_item.Tuco SDI Blue": [],
+                "libobs.show_scene_item.TypeA Cam": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Type A Printer",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Desk Cam",
+                        "pos": {
+                            "x": -215.0,
+                            "y": 659.2999267578125
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.44895833730697632,
+                            "y": 0.44907405972480774
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Live Chat",
+                        "pos": {
+                            "x": 0.0,
+                            "y": -780.7000732421875
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Tuco SDI Blue",
+                        "pos": {
+                            "x": -236.0,
+                            "y": 1029.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.4375,
+                            "y": 0.43796294927597046
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 2560.0,
+                            "y": 1440.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "TypeA Cam",
+                        "pos": {
+                            "x": 480.37496948242187,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    }
+                ]
             },
             "sync": 0,
             "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "ffmpeg_source",
+            "mixers": 15,
+            "monitoring_type": 0,
+            "muted": true,
+            "name": "TypeA Cam",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "advanced": true,
+                "audio_buffer_size": 1,
+                "color_range": 2,
+                "force_scale": false,
+                "input": "http://10.0.0.2/webcam/?action=stream",
+                "input_format": "MJPEG",
+                "is_local_file": false,
+                "video_buffer_size": 1
+            },
+            "sync": 0,
+            "volume": 0.0
         },
         {
             "deinterlace_field_order": 0,
@@ -1507,58 +1944,34 @@
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
-            "filters": [
-                {
-                    "deinterlace_field_order": 0,
-                    "deinterlace_mode": 0,
-                    "enabled": true,
-                    "flags": 0,
-                    "hotkeys": {},
-                    "id": "color_filter",
-                    "mixers": 0,
-                    "monitoring_type": 0,
-                    "muted": false,
-                    "name": "Color Correction",
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "settings": {
-                        "brightness": 0.13,
-                        "contrast": 0.26000000000000001
-                    },
-                    "sync": 0,
-                    "volume": 1.0
-                }
-            ],
-            "flags": 0,
+            "flags": 1,
             "hotkeys": {
                 "libobs.mute": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
                 "libobs.unmute": []
             },
-            "id": "ffmpeg_source",
-            "mixers": 15,
+            "id": "dshow_input",
+            "mixers": 0,
             "monitoring_type": 0,
             "muted": true,
-            "name": "TypeA Cam",
+            "name": "Desk Cam",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "advanced": true,
-                "audio_buffer_size": 1,
-                "color_range": 2,
-                "force_scale": false,
-                "input": "http://10.0.0.2/webcam/?action=stream",
-                "input_format": "MJPEG",
-                "is_local_file": false,
-                "video_buffer_size": 1
+                "active": true,
+                "audio_device_id": "Desktop Microphone (3- Microsoft® LifeCam Studio(TM)):",
+                "last_resolution": "1920x1080",
+                "last_video_device_id": "Logitech HD Pro Webcam C920:\\\\?\\usb#22vid_046d&pid_082d&mi_00#226&11310a23&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{bbefb6c7-2fc4-4139-bb8b-a58bba724083}",
+                "res_type": 1,
+                "resolution": "1920x1080",
+                "use_custom_audio_device": false,
+                "video_device_id": "Logitech HD Pro Webcam C920:\\\\?\\usb#22vid_046d&pid_082d&mi_00#226&11310a23&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{bbefb6c7-2fc4-4139-bb8b-a58bba724083}"
             },
             "sync": 0,
-            "volume": 0.0
+            "volume": 1.0
         },
         {
             "deinterlace_field_order": 0,
@@ -1569,28 +1982,80 @@
                 "OBSBasic.SelectScene": [
                     {
                         "alt": true,
-                        "key": "OBS_KEY_O",
+                        "key": "OBS_KEY_N",
                         "shift": true
                     }
                 ],
                 "libobs.hide_scene_item.Desk Cam": [],
+                "libobs.hide_scene_item.Live Chat": [],
+                "libobs.hide_scene_item.Othermill Cam": [],
                 "libobs.hide_scene_item.Tuco SDI Blue": [],
-                "libobs.hide_scene_item.TypeA Cam": [],
                 "libobs.show_scene_item.Desk Cam": [],
-                "libobs.show_scene_item.Tuco SDI Blue": [],
-                "libobs.show_scene_item.TypeA Cam": []
+                "libobs.show_scene_item.Live Chat": [],
+                "libobs.show_scene_item.Othermill Cam": [],
+                "libobs.show_scene_item.Tuco SDI Blue": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Type A Printer",
+            "name": "Othermill and Desk",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
                 "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Desk Cam",
+                        "pos": {
+                            "x": 1405.0,
+                            "y": 712.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.67395836114883423,
+                            "y": 0.67407405376434326
+                        },
+                        "scale_filter": "bicubic",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Tuco SDI Blue",
+                        "pos": {
+                            "x": 1455.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.66041666269302368,
+                            "y": 0.66018515825271606
+                        },
+                        "scale_filter": "bicubic",
+                        "visible": true
+                    },
                     {
                         "align": 5,
                         "bounds": {
@@ -1603,9 +2068,9 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "name": "TypeA Cam",
+                        "name": "Othermill Cam",
                         "pos": {
-                            "x": -486.0,
+                            "x": -402.0,
                             "y": 0.0
                         },
                         "rot": 0.0,
@@ -1628,15 +2093,114 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "name": "Tuco SDI Blue",
+                        "name": "Live Chat",
                         "pos": {
-                            "x": 1477.0,
-                            "y": 0.0
+                            "x": 0.0,
+                            "y": -875.0
                         },
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.78437501192092896,
-                            "y": 0.78425925970077515
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 1,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "dshow_input",
+            "mixers": 15,
+            "monitoring_type": 0,
+            "muted": true,
+            "name": "Fishbowl Grabber",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "active": true,
+                "color_range": "partial",
+                "color_space": "default",
+                "deactivate_when_not_showing": true,
+                "frame_interval": 333333,
+                "last_resolution": "1920x1080",
+                "last_video_device_id": "USB3.0 Capture Video:\\\\?\\usb#22vid_04b4&pid_00f9&mi_00#226&189896f0&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
+                "res_type": 1,
+                "resolution": "1920x1080",
+                "video_device_id": "USB3.0 Capture Video:\\\\?\\usb#22vid_04b4&pid_00f9&mi_00#226&189896f0&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
+                "video_format": 0
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [
+                    {
+                        "alt": true,
+                        "key": "OBS_KEY_D",
+                        "shift": true
+                    }
+                ],
+                "libobs.hide_scene_item.Analog Capture": [],
+                "libobs.hide_scene_item.Desk Cam": [],
+                "libobs.hide_scene_item.Live Chat": [],
+                "libobs.hide_scene_item.Tuco SDI Blue": [],
+                "libobs.show_scene_item.Analog Capture": [],
+                "libobs.show_scene_item.Desk Cam": [],
+                "libobs.show_scene_item.Live Chat": [],
+                "libobs.show_scene_item.Tuco SDI Blue": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Analog",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Tuco SDI Blue",
+                        "pos": {
+                            "x": 845.0,
+                            "y": 866.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.78333336114883423,
+                            "y": 0.78333336114883423
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -1655,13 +2219,574 @@
                         "crop_top": 0,
                         "name": "Desk Cam",
                         "pos": {
-                            "x": 1477.0,
-                            "y": 831.0
+                            "x": -362.0,
+                            "y": 839.0
                         },
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.56406247615814209,
-                            "y": 0.56388890743255615
+                            "x": 0.55624997615814209,
+                            "y": 0.55648148059844971
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Live Chat",
+                        "pos": {
+                            "x": 0.0,
+                            "y": -601.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Analog Capture",
+                        "pos": {
+                            "x": 486.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 2.5261876583099365,
+                            "y": 2.5259740352630615
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 8,
+            "enabled": true,
+            "filters": [
+                {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "scale_filter",
+                    "mixers": 0,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Scaling/Aspect Ratio",
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "resolution": "16:9",
+                        "sampling": "lanczos"
+                    },
+                    "sync": 0,
+                    "volume": 1.0
+                },
+                {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "crop_filter",
+                    "mixers": 0,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Crop/Pad",
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "bottom": 18,
+                        "left": 16,
+                        "right": 16,
+                        "top": 0
+                    },
+                    "sync": 0,
+                    "volume": 1.0
+                }
+            ],
+            "flags": 1,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "dshow_input",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": true,
+            "name": "Analog Capture",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "last_resolution": "720x480",
+                "last_video_device_id": "AVerMedia USB Polaris Analog Capture:\\\\?\\usb#22vid_07ca&pid_c039&mi_01#226&19534af3&0&0001#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{9b365890-165f-11d0-a195-0020afd156e4}",
+                "res_type": 1,
+                "resolution": "720x480",
+                "video_device_id": "AVerMedia USB Polaris Analog Capture:\\\\?\\usb#22vid_07ca&pid_c039&mi_01#226&19534af3&0&0001#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{9b365890-165f-11d0-a195-0020afd156e4}"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "window_capture",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "AirServer Window",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "cursor": false,
+                "window": "AirServer® Universal (x64):AirServer#3A#3AMainFrame:AirServer.exe"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [
+                    {
+                        "alt": true,
+                        "key": "OBS_KEY_J",
+                        "shift": true
+                    }
+                ],
+                "libobs.hide_scene_item.DSLR SDI Green": [],
+                "libobs.hide_scene_item.Desk Cam": [],
+                "libobs.hide_scene_item.Fishbowl Grabber": [],
+                "libobs.hide_scene_item.Live Chat": [],
+                "libobs.hide_scene_item.Tuco SDI Blue": [],
+                "libobs.hide_scene_item.uScope SDI White": [],
+                "libobs.show_scene_item.DSLR SDI Green": [],
+                "libobs.show_scene_item.Desk Cam": [],
+                "libobs.show_scene_item.Fishbowl Grabber": [],
+                "libobs.show_scene_item.Live Chat": [],
+                "libobs.show_scene_item.Tuco SDI Blue": [],
+                "libobs.show_scene_item.uScope SDI White": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Computer and Microscope",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Desk Cam",
+                        "pos": {
+                            "x": -220.0,
+                            "y": 524.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.42135417461395264,
+                            "y": 0.42129629850387573
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Tuco SDI Blue",
+                        "pos": {
+                            "x": -189.0,
+                            "y": 977.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.42864581942558289,
+                            "y": 0.42870369553565979
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Live Chat",
+                        "pos": {
+                            "x": 0.0,
+                            "y": -916.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 2560.0,
+                            "y": 1440.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Fishbowl Grabber",
+                        "pos": {
+                            "x": 480.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "bicubic",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "DSLR SDI Green",
+                        "pos": {
+                            "x": 347.0,
+                            "y": 836.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.69230771064758301,
+                            "y": 0.69223392009735107
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 2560.0,
+                            "y": 1440.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "uScope SDI White",
+                        "pos": {
+                            "x": 1469.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [
+                    {
+                        "alt": true,
+                        "key": "OBS_KEY_F",
+                        "shift": true
+                    }
+                ],
+                "libobs.hide_scene_item.Analog Capture": [],
+                "libobs.hide_scene_item.DSLR SDI Green": [],
+                "libobs.hide_scene_item.Desk Cam": [],
+                "libobs.hide_scene_item.Live Chat": [],
+                "libobs.hide_scene_item.Oscope SDI Red": [],
+                "libobs.hide_scene_item.Tuco SDI Blue": [],
+                "libobs.hide_scene_item.uScope SDI White": [],
+                "libobs.show_scene_item.Analog Capture": [],
+                "libobs.show_scene_item.DSLR SDI Green": [],
+                "libobs.show_scene_item.Desk Cam": [],
+                "libobs.show_scene_item.Live Chat": [],
+                "libobs.show_scene_item.Oscope SDI Red": [],
+                "libobs.show_scene_item.Tuco SDI Blue": [],
+                "libobs.show_scene_item.uScope SDI White": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Microscope",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 2560.0,
+                            "y": 1440.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "uScope SDI White",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Desk Cam",
+                        "pos": {
+                            "x": -293.0,
+                            "y": 701.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.40260416269302368,
+                            "y": 0.40277779102325439
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Tuco SDI Blue",
+                        "pos": {
+                            "x": -200.0,
+                            "y": 1057.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.35468751192092896,
+                            "y": 0.35462963581085205
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "DSLR SDI Green",
+                        "pos": {
+                            "x": 1708.0,
+                            "y": 979.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.53296703100204468,
+                            "y": 0.5330776572227478
+                        },
+                        "scale_filter": "bicubic",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Analog Capture",
+                        "pos": {
+                            "x": 159.0,
+                            "y": 846.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.182703971862793,
+                            "y": 1.1818181276321411
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Oscope SDI Red",
+                        "pos": {
+                            "x": 1770.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.6171875,
+                            "y": 0.61770832538604736
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Live Chat",
+                        "pos": {
+                            "x": 0.0,
+                            "y": -739.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "scale_filter": "lanczos",
                         "visible": true
@@ -1682,150 +2807,98 @@
                     "enabled": true,
                     "flags": 0,
                     "hotkeys": {},
-                    "id": "color_filter",
+                    "id": "crop_filter",
                     "mixers": 0,
                     "monitoring_type": 0,
                     "muted": false,
-                    "name": "Color Correction",
+                    "name": "Crop/Pad",
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
                     "push-to-talk": false,
                     "push-to-talk-delay": 0,
                     "settings": {
-                        "brightness": 0.059999999999999998,
-                        "color": 16749732,
-                        "contrast": 0.59999999999999998,
-                        "gamma": -0.070000000000000007
-                    },
-                    "sync": 0,
-                    "volume": 1.0
-                },
-                {
-                    "deinterlace_field_order": 0,
-                    "deinterlace_mode": 0,
-                    "enabled": true,
-                    "flags": 0,
-                    "hotkeys": {},
-                    "id": "sharpness_filter",
-                    "mixers": 0,
-                    "monitoring_type": 0,
-                    "muted": false,
-                    "name": "Sharpen",
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "settings": {
-                        "sharpness": 0.14999999999999999
-                    },
-                    "sync": 0,
-                    "volume": 1.0
-                },
-                {
-                    "deinterlace_field_order": 0,
-                    "deinterlace_mode": 0,
-                    "enabled": true,
-                    "flags": 0,
-                    "hotkeys": {},
-                    "id": "mask_filter",
-                    "mixers": 0,
-                    "monitoring_type": 0,
-                    "muted": false,
-                    "name": "Circular Mask",
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "settings": {
-                        "image_path": "C:/Users/micah/AppData/Roaming/obs-studio/assets/masks/othermill-fisheye-mask.png",
-                        "stretch": false,
-                        "type": "mask_alpha_filter.effect"
+                        "top": 30
                     },
                     "sync": 0,
                     "volume": 1.0
                 }
             ],
             "flags": 0,
+            "hotkeys": {},
+            "id": "window_capture",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Botbreaker VNC",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "cursor": false,
+                "priority": 1,
+                "window": "botbreaker - TightVNC Viewer:TvnWindowClass:tvnviewer.exe"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 7,
+            "enabled": true,
+            "flags": 1,
             "hotkeys": {
                 "libobs.mute": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
                 "libobs.unmute": []
             },
-            "id": "ffmpeg_source",
-            "mixers": 15,
+            "id": "decklink-input",
+            "mixers": 193,
             "monitoring_type": 0,
             "muted": true,
-            "name": "Othermill Cam",
+            "name": "uScope SDI White",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "advanced": true,
-                "audio_buffer_size": 1,
-                "force_scale": false,
-                "input": "http://10.0.0.4:8080/?action=stream",
-                "input_format": "MJPEG",
-                "is_local_file": false,
-                "video_buffer_size": 1
+                "buffering": false,
+                "device_hash": "1905448465_DeckLink Duo 2",
+                "device_name": "DeckLink Duo (2)",
+                "mode_id": 10,
+                "mode_name": "1080i60",
+                "pixel_format": 846624121
             },
             "sync": 0,
-            "volume": 0.0
+            "volume": 1.0
         },
         {
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
-            "flags": 0,
+            "flags": 1,
             "hotkeys": {
-                "OBSBasic.SelectScene": [
-                    {
-                        "alt": true,
-                        "key": "OBS_KEY_H",
-                        "shift": true
-                    }
-                ],
-                "libobs.hide_scene_item.Desk Cam": [],
-                "libobs.show_scene_item.Desk Cam": []
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
             },
-            "id": "scene",
-            "mixers": 0,
+            "id": "decklink-input",
+            "mixers": 255,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Desk",
+            "name": "Tuco SDI Blue",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 2,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Desk Cam",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "bicubic",
-                        "visible": true
-                    }
-                ]
+                "buffering": false,
+                "device_hash": "1905448464_DeckLink Duo 2",
+                "device_name": "DeckLink Duo (1)",
+                "mode_id": 7,
+                "mode_name": "1080p30"
             },
             "sync": 0,
             "volume": 1.0
@@ -1836,78 +2909,17 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
-                "OBSBasic.SelectScene": [
-                    {
-                        "alt": true,
-                        "key": "OBS_KEY_C",
-                        "shift": true
-                    }
-                ],
-                "libobs.hide_scene_item.Tuco SDI Blue": [],
-                "libobs.show_scene_item.Tuco SDI Blue": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Tuco",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 2,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Tuco SDI Blue",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [
-                    {
-                        "alt": true,
-                        "key": "OBS_KEY_L",
-                        "shift": true
-                    }
-                ],
+                "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.DSLR SDI Green": [],
                 "libobs.hide_scene_item.Desk Cam": [],
                 "libobs.hide_scene_item.Fishbowl Grabber": [],
+                "libobs.hide_scene_item.Live Chat": [],
                 "libobs.hide_scene_item.Oscope SDI Red": [],
                 "libobs.hide_scene_item.Tuco SDI Blue": [],
                 "libobs.show_scene_item.DSLR SDI Green": [],
                 "libobs.show_scene_item.Desk Cam": [],
                 "libobs.show_scene_item.Fishbowl Grabber": [],
+                "libobs.show_scene_item.Live Chat": [],
                 "libobs.show_scene_item.Oscope SDI Red": [],
                 "libobs.show_scene_item.Tuco SDI Blue": []
             },
@@ -1915,7 +2927,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Computer",
+            "name": "Computer vertical",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -1961,13 +2973,13 @@
                         "crop_top": 0,
                         "name": "Desk Cam",
                         "pos": {
-                            "x": 781.0,
-                            "y": 1037.0
+                            "x": 1732.0,
+                            "y": 503.0
                         },
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.44322916865348816,
-                            "y": 0.44351851940155029
+                            "x": 0.43125000596046448,
+                            "y": 0.43148148059844971
                         },
                         "scale_filter": "lanczos",
                         "visible": true
@@ -1995,7 +3007,7 @@
                             "y": 0.69031637907028198
                         },
                         "scale_filter": "lanczos",
-                        "visible": true
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -2020,7 +3032,7 @@
                             "y": 0.87708336114883423
                         },
                         "scale_filter": "lanczos",
-                        "visible": true
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -2036,8 +3048,8 @@
                         "crop_top": 0,
                         "name": "Tuco SDI Blue",
                         "pos": {
-                            "x": -56.0,
-                            "y": 1038.0
+                            "x": 1723.0,
+                            "y": 969.0
                         },
                         "rot": 0.0,
                         "scale": {
@@ -2046,291 +3058,6 @@
                         },
                         "scale_filter": "disable",
                         "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [
-                    {
-                        "alt": true,
-                        "key": "OBS_KEY_B",
-                        "shift": true
-                    }
-                ],
-                "libobs.hide_scene_item.All slide images": [],
-                "libobs.show_scene_item.All slide images": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Slides",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 2,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "All slide images",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "bicubic",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "slideshow",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "All slide images",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "files": [
-                    {
-                        "value": "C:/Users/micah/AppData/Roaming/obs-studio/assets/slides"
-                    }
-                ],
-                "randomize": true
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [
-                    {
-                        "alt": true,
-                        "key": "OBS_KEY_E",
-                        "shift": true
-                    }
-                ],
-                "libobs.hide_scene_item.uScope SDI White": [],
-                "libobs.show_scene_item.uScope SDI White": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Microscope Only",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 2,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "uScope SDI White",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [
-                    {
-                        "alt": true,
-                        "key": "OBS_KEY_K",
-                        "shift": true
-                    }
-                ],
-                "libobs.hide_scene_item.Fishbowl Grabber": [],
-                "libobs.show_scene_item.Fishbowl Grabber": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Computer Only",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 2,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Fishbowl Grabber",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "bicubic",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [
-                    {
-                        "alt": true,
-                        "key": "OBS_KEY_I",
-                        "shift": true
-                    }
-                ],
-                "libobs.hide_scene_item.DSLR SDI Green": [],
-                "libobs.hide_scene_item.Desk Cam": [],
-                "libobs.hide_scene_item.Tuco SDI Blue": [],
-                "libobs.hide_scene_item.uScope SDI White": [],
-                "libobs.show_scene_item.DSLR SDI Green": [],
-                "libobs.show_scene_item.Desk Cam": [],
-                "libobs.show_scene_item.Tuco SDI Blue": [],
-                "libobs.show_scene_item.uScope SDI White": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "DSLR",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 2,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "uScope SDI White",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1406.0,
-                            "y": 791.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 2,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Desk Cam",
-                        "pos": {
-                            "x": 1480.0,
-                            "y": 715.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "lanczos",
-                        "visible": true
                     },
                     {
                         "align": 5,
@@ -2344,42 +3071,17 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "name": "Tuco SDI Blue",
+                        "name": "Live Chat",
                         "pos": {
-                            "x": 1619.0,
+                            "x": 0.0,
                             "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.66562497615814209,
-                            "y": 0.6657407283782959
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 2631.0,
-                            "y": 1508.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 2,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "DSLR SDI Green",
-                        "pos": {
-                            "x": -273.0,
-                            "y": -53.0
                         },
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
                             "y": 1.0
                         },
-                        "scale_filter": "disable",
+                        "scale_filter": "lanczos",
                         "visible": true
                     }
                 ]
@@ -2396,240 +3098,26 @@
                 "OBSBasic.SelectScene": [
                     {
                         "alt": true,
-                        "key": "OBS_KEY_M",
+                        "key": "OBS_KEY_A",
                         "shift": true
                     }
                 ],
-                "libobs.hide_scene_item.AirServer Window": [],
-                "libobs.hide_scene_item.Analog Capture": [],
-                "libobs.hide_scene_item.Botbreaker VNC": [],
+                "libobs.hide_scene_item.DSLR SDI Green": [],
+                "libobs.hide_scene_item.Desk Cam": [],
                 "libobs.hide_scene_item.Fishbowl Grabber": [],
-                "libobs.hide_scene_item.Othermill Cam": [],
-                "libobs.show_scene_item.AirServer Window": [],
-                "libobs.show_scene_item.Analog Capture": [],
-                "libobs.show_scene_item.Botbreaker VNC": [],
+                "libobs.hide_scene_item.Live Chat": [],
+                "libobs.hide_scene_item.Tuco SDI Blue": [],
+                "libobs.show_scene_item.DSLR SDI Green": [],
+                "libobs.show_scene_item.Desk Cam": [],
                 "libobs.show_scene_item.Fishbowl Grabber": [],
-                "libobs.show_scene_item.Othermill Cam": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Othermill and Closet",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "AirServer Window",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.66319084167480469,
-                            "y": 0.66326528787612915
-                        },
-                        "scale_filter": "lanczos",
-                        "visible": false
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Botbreaker VNC",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 715.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.94371342658996582,
-                            "y": 0.94401043653488159
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Fishbowl Grabber",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 714.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.67239582538604736,
-                            "y": 0.67222219705581665
-                        },
-                        "scale_filter": "lanczos",
-                        "visible": false
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Analog Capture",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.5505480766296387,
-                            "y": 1.5497835874557495
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 2,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Othermill Cam",
-                        "pos": {
-                            "x": 971.0,
-                            "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "bicubic",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.AirServer Window": [],
-                "libobs.show_scene_item.AirServer Window": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "AirServer",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 2,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "AirServer Window",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "bicubic",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [
-                    {
-                        "alt": true,
-                        "key": "OBS_KEY_G",
-                        "shift": true
-                    }
-                ],
-                "libobs.hide_scene_item.DSLR SDI Green": [],
-                "libobs.hide_scene_item.Desk Cam": [],
-                "libobs.hide_scene_item.Oscope SDI Red": [],
-                "libobs.hide_scene_item.Tuco SDI Blue": [],
-                "libobs.show_scene_item.DSLR SDI Green": [],
-                "libobs.show_scene_item.Desk Cam": [],
-                "libobs.show_scene_item.Oscope SDI Red": [],
+                "libobs.show_scene_item.Live Chat": [],
                 "libobs.show_scene_item.Tuco SDI Blue": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Oscope",
+            "name": "Computer CAD",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -2639,51 +3127,26 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 2560.0,
+                            "y": 1440.0
                         },
                         "bounds_align": 0,
-                        "bounds_type": 0,
+                        "bounds_type": 2,
                         "crop_bottom": 0,
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "name": "DSLR SDI Green",
+                        "name": "Fishbowl Grabber",
                         "pos": {
-                            "x": 1058.0,
-                            "y": -46.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.94945055246353149,
-                            "y": 0.94918501377105713
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
                             "x": 0.0,
                             "y": 0.0
                         },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Tuco SDI Blue",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 965.0
-                        },
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.66770833730697632,
-                            "y": 0.66759258508682251
+                            "x": 1.0,
+                            "y": 1.0
                         },
-                        "scale_filter": "disable",
+                        "scale_filter": "bicubic",
                         "visible": true
                     },
                     {
@@ -2700,15 +3163,15 @@
                         "crop_top": 0,
                         "name": "Desk Cam",
                         "pos": {
-                            "x": 1282.0,
-                            "y": 763.0
+                            "x": 21.0,
+                            "y": 900.0
                         },
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.66562497615814209,
-                            "y": 0.6657407283782959
+                            "x": 0.33906251192092896,
+                            "y": 0.33888888359069824
                         },
-                        "scale_filter": "disable",
+                        "scale_filter": "lanczos",
                         "visible": true
                     },
                     {
@@ -2723,99 +3186,70 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "name": "Oscope SDI Red",
+                        "name": "DSLR SDI Green",
                         "pos": {
+                            "x": 1439.0,
+                            "y": -14.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.69010990858078003,
+                            "y": 0.69031637907028198
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
                             "x": 0.0,
                             "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Tuco SDI Blue",
+                        "pos": {
+                            "x": 1847.0,
+                            "y": 895.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.35729166865348816,
+                            "y": 0.35740742087364197
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Live Chat",
+                        "pos": {
+                            "x": 0.0,
+                            "y": -903.0
                         },
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
                             "y": 1.0
                         },
-                        "scale_filter": "disable",
+                        "scale_filter": "lanczos",
                         "visible": true
                     }
                 ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "filters": [
-                {
-                    "deinterlace_field_order": 0,
-                    "deinterlace_mode": 0,
-                    "enabled": true,
-                    "flags": 0,
-                    "hotkeys": {},
-                    "id": "scale_filter",
-                    "mixers": 0,
-                    "monitoring_type": 0,
-                    "muted": false,
-                    "name": "Scaling/Aspect Ratio",
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "settings": {
-                        "resolution": "4:3",
-                        "sampling": "lanczos"
-                    },
-                    "sync": 0,
-                    "volume": 1.0
-                },
-                {
-                    "deinterlace_field_order": 0,
-                    "deinterlace_mode": 0,
-                    "enabled": true,
-                    "flags": 0,
-                    "hotkeys": {},
-                    "id": "color_filter",
-                    "mixers": 0,
-                    "monitoring_type": 0,
-                    "muted": false,
-                    "name": "Color Correction",
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "settings": {
-                        "brightness": 0.059999999999999998,
-                        "contrast": 0.5,
-                        "gamma": 0.80000000000000004,
-                        "hue_shift": -4.6600000000000001,
-                        "saturation": -0.029999999999999999
-                    },
-                    "sync": 0,
-                    "volume": 1.0
-                }
-            ],
-            "flags": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "decklink-input",
-            "mixers": 255,
-            "monitoring_type": 0,
-            "muted": true,
-            "name": "Oscope SDI Red",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "device_hash": "1905448467_DeckLink Duo 2",
-                "device_name": "DeckLink Duo (4)",
-                "mode_id": 16,
-                "mode_name": "720p60",
-                "pixel_format": 846624121
             },
             "sync": 0,
             "volume": 1.0
