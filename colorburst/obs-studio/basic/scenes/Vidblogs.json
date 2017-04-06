@@ -25,8 +25,8 @@
         "sync": 200000000,
         "volume": 1.0
     },
-    "current_program_scene": "Slides",
-    "current_scene": "Slides",
+    "current_program_scene": "Type A Printer",
+    "current_scene": "Type A Printer",
     "current_transition": "Cut",
     "modules": {
         "auto-scene-switcher": {
@@ -3704,7 +3704,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "css": "body { background-color: rgba(255, 255, 255, 0.9); overflow: hidden; font-size: 18px; }\n.fonts-loaded body { font-family: Corbel; }\n.trpContentPanel { background-color: transparent; }\n.scroller::-webkit-scrollbar { width: 0; }\n.chat-item { margin: 0px; padding: 2px; }\n.chat-item__container { margin: 0; padding: 0; }\n.chat-item__content { margin: 0 0 0 35px; padding: 0; }\n.chat-and-toolbar-wrapper { padding: 0; }\n.right-toolbar-region { display: none; }\n.chat-header { display: none; }\n.chat-input { padding: 0 4px; font-family: courier; min-height: 0; background-color: rgba(0,80,195,0.6); color: #fff; }\n.chat-input__btn { display: none; }\n.chat-input__container { display: none; }\n.chat-input:before { content: \"Join us at https://gitter.im/scanlime/live\"; }\n",
+                "css": "body { background-color: rgba(255, 255, 255, 0.9); overflow: hidden; font-size: 18px; }\n.fonts-loaded body { font-family: Corbel; }\n.trpContentPanel { background-color: transparent; }\n.scroller::-webkit-scrollbar { width: 0; }\n.chat-item { margin: 0px; padding: 2px; }\n.chat-item__container { margin: 0; padding: 0; }\n.chat-item__content { margin: 0 0 0 35px; padding: 0; }\n.chat-and-toolbar-wrapper { padding: 0; }\n.right-toolbar-region { display: none; }\n.chat-header { display: none; }\n.chat-input { padding: 0 4px; font-family: courier; min-height: 0; background-color: rgba(0,80,195,0.6); color: #fff; }\n.chat-input__btn { display: none; }\n.chat-input__container { display: none; }\n.chat-input:before { content: \"Join us at https://gitter.im/scanlime/live\"; }\n.chat-item.unread .chat-item__container { border-right:none; background-color:rgba(0,0,0,0); }\n.chat-item.unread.mentioned .chat-item__container { border-right:none; background-color:rgba(0,0,0,0); }\n",
                 "fps": 10,
                 "height": 1440,
                 "is_local_file": false,
@@ -3754,7 +3754,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "css": "body { background-color: rgba(255, 255, 255, 0.9); overflow: hidden; font-size: 22px; }\n.fonts-loaded body { font-family: Corbel; }\n.trpContentPanel { background-color: transparent; }\n.scroller::-webkit-scrollbar { width: 0; }\n.chat-item { margin: 0px; padding: 2px 6px; display: none; }\n.chat-item__details { display: none; }\n.chat-item__container { margin: 0; padding: 0; }\n.chat-item__content { margin: 0; padding: 0; }\n.chat-item__aside { display: none; }\n.chat-and-toolbar-wrapper { padding: 0; }\n.right-toolbar-region { display: none; }\n.chat-header { display: none; }\n.chat-input { display: none; }\n\n.chat-item:last-child { display: block; }\n",
+                "css": "body { background-color: rgba(255, 255, 255, 0.9); overflow: hidden; font-size: 24px; }\n.fonts-loaded body { font-family: Corbel; }\n.trpContentPanel { background-color: transparent; }\n.scroller::-webkit-scrollbar { width: 0; }\n.chat-item { margin: 0px; padding: 2px 6px; display: none; }\n.chat-item__details { display: none; }\n.chat-item__container { margin: 0; padding: 0; }\n.chat-item__content { margin: 0; padding: 0; }\n.chat-item__aside { display: none; }\n.chat-and-toolbar-wrapper { padding: 0; }\n.right-toolbar-region { display: none; }\n.chat-header { display: none; }\n.chat-input { display: none; }\n.chat-item:last-child { display: block; }\n.chat-item.unread .chat-item__container { border-right:none; background-color:rgba(0,0,0,0); }\n.chat-item.unread.mentioned .chat-item__container { border-right:none; background-color:rgba(0,0,0,0); }\n",
                 "fps": 5,
                 "height": 200,
                 "shutdown": false,
