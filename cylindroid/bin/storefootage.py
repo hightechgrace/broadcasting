@@ -47,10 +47,15 @@ def atomic_move(src_file, dest_file):
     old_file = src_file + '-old'
     shutil.copy2(src_file, temp_file)
     os.rename(temp_file, dest_file)
-    assert os.stat(src_file).st_size == os.stat(dest_file).st_size
-    os.rename(src_file, old_file)
-    cleanup_queue.append(old_file)
-    print('finished: %s -> %s' % (src_file, dest_file))
+    if os.stat(src_file).st_size == os.stat(dest_file).st_size:
+        try:
+            os.rename(src_file, old_file)
+            cleanup_queue.append(old_file)
+            print('finished: %s -> %s' % (src_file, dest_file))
+        except Exception, e:
+            print('ERROR while cleaning up, leaving file. Tried to rename %s to %s' % (src_file, old_file))
+    else:
+        print('MISMATCH, changed while copying? leaving file. %s' % src_file)
 
 for src_file in source_files:
     process_file(src_file)
