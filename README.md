@@ -3,12 +3,19 @@ Configuration and scripts for the live video broadcast rig.
 
 Not sure if anyone else will find this stuff useful, it's here mostly as a backup / archive for my own use. The repository is organized by physical machine:
 
-* `colorburst` is the main broadcast machine
-	* Black Magic Decklink 4x SDI card
-	* Quad Intel i7, NVidia, Windows 10
-	* Local storage for recording only, shared with smb
-	* Runs obs-studio and airserver
-	* Encodes 12000kbit h.264 in hardware, streams to `spacer`
+* `colorburst` is the main broadcast and sound machine
+    * Local storage for recording only, shared with smb
+	* Video
+		* Black Magic Decklink 4x SDI card
+		* Quad Intel i7, NVidia, Windows 10
+		* Runs obs-studio and airserver
+		* Encodes 12000kbit h.264 in hardware, streams to `spacer`
+	* Audio
+		* Ableton Live for mixing, filtering, and recording
+		* Records multi-channel audio
+		* Generates a rough audio mix that's distributed to `colorburst` and the other video recorders.
+		* VB-Cable A&B Drivers: routing from Ableton to OBS, and from system audio to Ableton.
+		* ASIO4ALL for combining M-Track, VB-Cable, and HDMI grabber devices
 
 * `spacer` is a Linux transcode server
 	* Dual Intel, NVidia, Ubuntu
@@ -27,13 +34,7 @@ Not sure if anyone else will find this stuff useful, it's here mostly as a backu
 	* Final Cut Pro X (blah)
 	* Direct recording for oscilloscope (BlackMagic+OBS) and `fishplex` (HD60).
 
-* `squarebot` is the sound workstation
-	* Macbook Air, just the builtin SSD for audio recording
-	* Records multi-channel audio (M-Track 8 + Ableton)
-	* Generates a rough audio mix that's distributed to `colorburst` and the other video recorders.
-
 * `brassica` is the CAD workstation
    * Rhino license is stuck on this box
    * Nice GPU here
    * Direct recording for the microscope (HD60+OBS).
-
