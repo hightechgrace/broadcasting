@@ -27,20 +27,28 @@ def process_file(src_file):
             process_file(os.path.join(src_file, f))
         return
 
-    if os.path.isfile(src_file) and os.path.splitext(src_file)[1].lower() in ('.mov', '.m4a', '.mp4', '.m4v', '.aif', '.wav') and src_file.find('temp-') < 0:
-        ctime = time.localtime(os.stat(src_file).st_ctime)
-        dir_label = time.strftime('%Y%m%d', ctime)
-        file_label = time.strftime('%H%M%S_', ctime)
+    if not os.path.isfile(src_file):
+        return
+    if os.path.splitext(src_file)[1].lower() not in ('.mov', '.m4a', '.mp4', '.m4v', '.aif', '.wav'):
+        return
+    if src_file.find('temp-') >= 0:
+        return
+    if os.stat(src_file).st_size < 1e6:
+        return
 
-        dest_dir = os.path.join(target_directory, dir_label)
-        if not os.path.isdir(dest_dir):
-            os.mkdir(dest_dir)
+    ctime = time.localtime(os.stat(src_file).st_ctime)
+    dir_label = time.strftime('%Y%m%d', ctime)
+    file_label = time.strftime('%H%M%S_', ctime)
 
-        dest_file = os.path.join(dest_dir, file_label + os.path.basename(src_file))
+    dest_dir = os.path.join(target_directory, dir_label)
+    if not os.path.isdir(dest_dir):
+        os.mkdir(dest_dir)
 
-        if not os.path.isfile(dest_file):
-            ops.append((src_file, dest_file))
-            print('preparing move: %s -> %s' % (src_file, dest_file))
+    dest_file = os.path.join(dest_dir, file_label + os.path.basename(src_file))
+
+    if not os.path.isfile(dest_file):
+        ops.append((src_file, dest_file))
+        print('preparing move: %s -> %s' % (src_file, dest_file))
 
 def atomic_move(src_file, dest_file):
     temp_file = dest_file + '-temp'
