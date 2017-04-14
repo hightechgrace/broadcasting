@@ -14,8 +14,9 @@ Not sure if anyone else will find this stuff useful, it's here mostly as a backu
 		* Ableton Live for mixing, filtering, and recording
 		* Records multi-channel audio
 		* Generates a rough audio mix that's distributed to `colorburst` and the other video recorders.
-		* VB-Cable A&B Drivers: routing from Ableton to OBS, and from system audio to Ableton.
-		* ASIO4ALL for combining M-Track, VB-Cable, and HDMI grabber devices
+		* Virtual Audio Cable: routing from Ableton to OBS, and from system audio to Ableton.
+			* VB-Cable is a cheaper/free alternative that almost works, but I had underflow problems there I couldn't resolve.
+		* ASIO4ALL for combining M-Track, VAC, and HDMI grabber devices
 
 * `spacer` is a Linux transcode server
 	* Dual Intel, NVidia, Ubuntu
