@@ -20,6 +20,8 @@ Not sure if anyone else will find this stuff useful, it's here mostly as a backu
 				* It's hard to keep system audio clear of autoplaying chat videos :)
 				* Couldn't keep this from eventually underrunning, too many timebases in the kitchen.
 		* ASIO4ALL for combining M-Track inputs/outputs and VAC output
+		* Shotgun microphone: [Rode NTG-1](http://www.rode.com/microphones/ntg-1)
+		* Portable headset microphone: Shure (version ???)
 
 * `spacer` is a Linux transcode server
 	* Dual Intel, NVidia, Ubuntu
@@ -42,3 +44,8 @@ Not sure if anyone else will find this stuff useful, it's here mostly as a backu
    * Rhino license is stuck on this box
    * Nice GPU here
    * Direct recording for the microscope (HD60+OBS).
+   
+* Other Hardware
+	* LED panel lights: Fovitec dual temperature
+	* Light C stands (for mounting of various stuff)
+	* SLR mounted on a variable friction arm
