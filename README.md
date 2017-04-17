@@ -4,10 +4,13 @@ Configuration and scripts for the live video broadcast rig.
 Not sure if anyone else will find this stuff useful, it's here mostly as a backup / archive for my own use. The repository is organized by physical machine:
 
 * `colorburst` is the main broadcast and sound machine
-    * Local storage for recording only, shared with smb
+	* Local storage for recording only, shared with smb
+	* Quad Intel i7, NVidia, Windows 10
 	* Video
-		* Black Magic Decklink 4x SDI card
-		* Quad Intel i7, NVidia, Windows 10
+		* Black Magic Decklink 4x SDI card (Microscope, DSLR viewfinder, Cat camera, Oscilloscope)
+		* Magewell USB 3.0 HDMI capture dongle (to 4x1 switcher for demos)
+		* AVermedia USB analog video capture dongle (analog wireless rx)
+		* Logitech C920 webcam (desk cam)
 		* Runs obs-studio and airserver
 		* Encodes 12000kbit h.264 in hardware, streams to `spacer`
 	* Audio
@@ -21,7 +24,7 @@ Not sure if anyone else will find this stuff useful, it's here mostly as a backu
 				* Couldn't keep this from eventually underrunning, too many timebases in the kitchen.
 		* ASIO4ALL for combining M-Track inputs/outputs and VAC output
 		* Shotgun microphone: [Rode NTG-1](http://www.rode.com/microphones/ntg-1)
-		* Portable headset microphone: Shure (version ???)
+		* Portable headset microphone: Shure WH20XLR
 
 * `spacer` is a Linux transcode server
 	* Dual Intel, NVidia, Ubuntu
