@@ -23,7 +23,12 @@ def process_file(src_file):
         return
 
     if os.path.isdir(src_file):
-        for f in os.listdir(src_file):
+        try:
+            listing = os.listdir(src_file)
+        except OSError, e:
+            print("Skipping inaccessible directory %s, %s" % (src_file, e))
+            return
+        for f in listing:
             process_file(os.path.join(src_file, f))
         return
 
