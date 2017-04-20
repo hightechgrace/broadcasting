@@ -3,12 +3,28 @@ Configuration and scripts for the live video broadcast rig.
 
 Not sure if anyone else will find this stuff useful, it's here mostly as a backup / archive for my own use. The repository is organized by physical machine:
 
-* `colorburst` is the main broadcast machine
-	* Black Magic Decklink 4x SDI card
-	* Quad Intel i7, NVidia, Windows 10
+* `colorburst` is the main broadcast and sound machine
 	* Local storage for recording only, shared with smb
-	* Runs obs-studio and airserver
-	* Encodes 12000kbit h.264 in hardware, streams to `spacer`
+	* Quad Intel i7, NVidia, Windows 10
+	* Video
+		* Black Magic Decklink 4x SDI card (Microscope, DSLR viewfinder, Cat camera, Oscilloscope)
+		* Magewell USB 3.0 HDMI capture dongle (to 4x1 switcher for demos)
+		* AVermedia USB analog video capture dongle (analog wireless rx)
+		* Logitech C920 webcam (desk cam)
+		* Runs obs-studio and airserver
+		* Encodes 12000kbit h.264 in hardware, streams to `spacer`
+	* Audio
+		* Ableton Live for mixing, filtering, and recording
+		* Records multi-channel audio
+		* Generates a rough audio mix that's distributed to `colorburst` and the other video recorders.
+		* Virtual Audio Cable: routing from Ableton to OBS
+			* VB-Cable is a cheaper/free alternative that almost works, but I had underflow problems there I couldn't resolve.
+			* Would also use a second cable to route system audio back to Ableton, BUT:
+				* It's hard to keep system audio clear of autoplaying chat videos :)
+				* Couldn't keep this from eventually underrunning, too many timebases in the kitchen.
+		* ASIO4ALL for combining M-Track inputs/outputs and VAC output
+		* Shotgun microphone: [Rode NTG-1](http://www.rode.com/microphones/ntg-1)
+		* Portable headset microphone: Shure WH20XLR
 
 * `spacer` is a Linux transcode server
 	* Dual Intel, NVidia, Ubuntu
@@ -27,13 +43,12 @@ Not sure if anyone else will find this stuff useful, it's here mostly as a backu
 	* Final Cut Pro X (blah)
 	* Direct recording for oscilloscope (BlackMagic+OBS) and `fishplex` (HD60).
 
-* `squarebot` is the sound workstation
-	* Macbook Air, just the builtin SSD for audio recording
-	* Records multi-channel audio (M-Track 8 + Ableton)
-	* Generates a rough audio mix that's distributed to `colorburst` and the other video recorders.
-
 * `brassica` is the CAD workstation
    * Rhino license is stuck on this box
    * Nice GPU here
    * Direct recording for the microscope (HD60+OBS).
-
+   
+* Other Hardware
+	* LED panel lights: Fovitec dual temperature
+	* Light C stands (for mounting of various stuff)
+	* SLR mounted on a variable friction arm
