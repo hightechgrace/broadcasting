@@ -4,19 +4,29 @@ Configuration and scripts for the live video broadcast rig.
 Not sure if anyone else will find this stuff useful, it's here mostly as a backup / archive for my own use. The repository is organized by physical machine:
 
 * `colorburst` is the main broadcast and sound machine
-    * Local storage for recording only, shared with smb
+	* Local storage for recording only, shared with smb
+	* Quad Intel i7, NVidia, Windows 10
 	* Video
-		* Black Magic Decklink 4x SDI card
-		* Quad Intel i7, NVidia, Windows 10
+		* Black Magic Decklink 4x SDI card (Microscope, DSLR viewfinder, Cat camera, Oscilloscope)
+		* Magewell USB 3.0 HDMI capture dongle (to 4x1 switcher for demos)
+		* AVermedia USB analog video capture dongle (analog wireless rx)
+		* Logitech C920 webcam (desk cam)
 		* Runs obs-studio and airserver
 		* Encodes 12000kbit h.264 in hardware, streams to `spacer`
-	* Audio
+	* Local Audio
+		* On-board sound playback (general shop utility, playing music)
+		* Line-In is the broadcast audio, via OBS.
+		* This could all be replaced by software, but I had problems with both VB-Cable and Virtual Audio Cable
+	* Multi-channel Audio
 		* Ableton Live for mixing, filtering, and recording
-		* Records multi-channel audio
-		* Generates a rough audio mix that's distributed to `colorburst` and the other video recorders.
-		* Virtual Audio Cable: routing from Ableton to OBS, and from system audio to Ableton.
-			* VB-Cable is a cheaper/free alternative that almost works, but I had underflow problems there I couldn't resolve.
-		* ASIO4ALL for combining M-Track, VAC, and HDMI grabber devices
+		* ASIO drivers, small buffer size for low latency
+		* Generates a rough audio mix in real-time for the stream and video recorders
+		* Unprocessed multi-channel recordings for later edits
+		* All connections to other computer inputs/outputs made via audio transformers, to avoid hearing ground loop currents caused by digital communications between the same computers.
+		* Shotgun microphone: [Rode NTG-1](http://www.rode.com/microphones/ntg-1)
+		* Portable headset microphone: Shure WH20XLR
+		* 4-channel headphone amp for distributing the rough mix to video recorders
+		* 4-channel passive mixer for combining the various shop computers (except for `fishbowl`) into a single `Aux` input for recording
 
 * `spacer` is a Linux transcode server
 	* Dual Intel, NVidia, Ubuntu
@@ -39,3 +49,8 @@ Not sure if anyone else will find this stuff useful, it's here mostly as a backu
    * Rhino license is stuck on this box
    * Nice GPU here
    * Direct recording for the microscope (HD60+OBS).
+   
+* Other Hardware
+	* LED panel lights: Fovitec dual temperature
+	* Light C stands (for mounting of various stuff)
+	* SLR mounted on a variable friction arm
