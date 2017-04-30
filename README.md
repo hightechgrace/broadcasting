@@ -6,13 +6,17 @@ Not sure if anyone else will find this stuff useful, it's here mostly as a backu
 * `colorburst` is the main broadcast and sound machine
 	* Local storage for recording only, shared with smb
 	* Quad Intel i7, NVidia, Windows 10
-	* Video
+	* Main Video
 		* Black Magic Decklink 4x SDI card (Microscope, DSLR viewfinder, Cat camera, Oscilloscope)
 		* Magewell USB 3.0 HDMI capture dongle (to 4x1 switcher for demos)
 		* AVermedia USB analog video capture dongle (analog wireless rx)
 		* Logitech C920 webcam (desk cam)
 		* Runs obs-studio and airserver
 		* Encodes 12000kbit h.264 in hardware, streams to `spacer`
+	* Tuco Flyer Video
+		* Black Magic Mini Recorder PCI card, 1x SDI input
+		* Additional copy of obs-studio
+		* Encoding 1080p30 at 2500kBps in software with x264
 	* Local Audio
 		* On-board sound playback (general shop utility, playing music)
 		* Line-In is the broadcast audio, via OBS.

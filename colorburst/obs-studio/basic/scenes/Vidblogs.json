@@ -22,11 +22,11 @@
         "settings": {
             "device_id": "{0.0.1.00000000}.{b3553c5d-7070-4b81-a1e5-0fa646db1014}"
         },
-        "sync": 200000000,
+        "sync": 140000000,
         "volume": 1.0
     },
-    "current_program_scene": "Type A Printer",
-    "current_scene": "Type A Printer",
+    "current_program_scene": "Computer and Microscope",
+    "current_scene": "Computer and Microscope",
     "current_transition": "Cut",
     "modules": {
         "auto-scene-switcher": {
@@ -119,7 +119,7 @@
             "saved_projectors": ""
         }
     ],
-    "scaling_mode": 0,
+    "scaling_mode": 2,
     "scene_order": [
         {
             "name": "AirServer"
@@ -174,6 +174,48 @@
         }
     ],
     "sources": [
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "text_gdiplus",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Text (GDI+)",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "bk_color": 16777215,
+                "bk_opacity": 81,
+                "color": 0,
+                "extents": true,
+                "extents_cx": 720,
+                "extents_cy": 750,
+                "file": "C:/Users/micah/dropbox/projects/obs-studio/colorburst/assets/support.txt",
+                "font": {
+                    "face": "Consolas",
+                    "flags": 0,
+                    "size": 36,
+                    "style": ""
+                },
+                "gradient": false,
+                "gradient_color": 16777215,
+                "opacity": 93,
+                "outline": false,
+                "outline_color": 12369084,
+                "outline_size": 9,
+                "read_from_file": true,
+                "valign": "top",
+                "vertical": false
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
         {
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
@@ -275,13 +317,13 @@
                         "crop_top": 0,
                         "name": "DSLR SDI Green",
                         "pos": {
-                            "x": 1439.0,
-                            "y": -14.0
+                            "x": 1573.0,
+                            "y": 22.0
                         },
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.69010990858078003,
-                            "y": 0.69031637907028198
+                            "x": 0.5923076868057251,
+                            "y": 0.5925215482711792
                         },
                         "scale_filter": "lanczos",
                         "visible": false
@@ -875,7 +917,7 @@
                             "y": 0.61770832538604736
                         },
                         "scale_filter": "disable",
-                        "visible": true
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -2476,8 +2518,8 @@
                         "crop_top": 0,
                         "name": "DSLR SDI Green",
                         "pos": {
-                            "x": 1574.0,
-                            "y": -18.0
+                            "x": 1578.0,
+                            "y": 17.0
                         },
                         "rot": 0.0,
                         "scale": {
@@ -2557,9 +2599,11 @@
                 ],
                 "libobs.hide_scene_item.All slide images": [],
                 "libobs.hide_scene_item.Live Chat": [],
+                "libobs.hide_scene_item.Text (GDI+)": [],
                 "libobs.hide_scene_item.Topic Line": [],
                 "libobs.show_scene_item.All slide images": [],
                 "libobs.show_scene_item.Live Chat": [],
+                "libobs.show_scene_item.Text (GDI+)": [],
                 "libobs.show_scene_item.Topic Line": []
             },
             "id": "scene",
@@ -2644,6 +2688,31 @@
                         "scale": {
                             "x": 1.1475000381469727,
                             "y": 1.1499999761581421
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": true
+                    },
+                    {
+                        "align": 0,
+                        "bounds": {
+                            "x": 1834.0,
+                            "y": 1387.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Text (GDI+)",
+                        "pos": {
+                            "x": 2005.0244140625,
+                            "y": 944.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.5402438640594482,
+                            "y": 1.5402438640594482
                         },
                         "scale_filter": "lanczos",
                         "visible": true
@@ -3736,7 +3805,7 @@
                     "push-to-talk": false,
                     "push-to-talk-delay": 0,
                     "settings": {
-                        "bottom": 160
+                        "bottom": 108
                     },
                     "sync": 0,
                     "volume": 1.0
@@ -3756,7 +3825,7 @@
             "settings": {
                 "css": "body { background-color: rgba(255, 255, 255, 0.9); overflow: hidden; font-size: 24px; }\n.fonts-loaded body { font-family: Corbel; }\n.trpContentPanel { background-color: transparent; }\n.scroller::-webkit-scrollbar { width: 0; }\n.chat-item { margin: 0px; padding: 2px 6px; display: none; }\n.chat-item__details { display: none; }\n.chat-item__container { margin: 0; padding: 0; }\n.chat-item__content { margin: 0; padding: 0; }\n.chat-item__aside { display: none; }\n.chat-and-toolbar-wrapper { padding: 0; }\n.right-toolbar-region { display: none; }\n.chat-header { display: none; }\n.chat-input { display: none; }\n.chat-item:last-child { display: block; }\n.chat-item.unread .chat-item__container { border-right:none; background-color:rgba(0,0,0,0); }\n.chat-item.unread.mentioned .chat-item__container { border-right:none; background-color:rgba(0,0,0,0); }\n",
                 "fps": 5,
-                "height": 200,
+                "height": 150,
                 "shutdown": false,
                 "url": "https://gitter.im/scanlime/topic/~chat",
                 "width": 2560
