@@ -53,7 +53,7 @@
         }
     },
     "name": "Vidblogs",
-    "preview_locked": true,
+    "preview_locked": false,
     "quick_transitions": [],
     "saved_preview_projectors": [
         {
@@ -326,7 +326,7 @@
                             "y": 0.5925215482711792
                         },
                         "scale_filter": "lanczos",
-                        "visible": false
+                        "visible": true
                     },
                     {
                         "align": 5,
@@ -2527,7 +2527,7 @@
                             "y": 0.60594439506530762
                         },
                         "scale_filter": "lanczos",
-                        "visible": false
+                        "visible": true
                     },
                     {
                         "align": 5,
@@ -2706,7 +2706,11 @@
                         "crop_top": 0,
                         "name": "Text (GDI+)",
                         "pos": {
+<<<<<<< HEAD
                             "x": 2005.0244140625,
+=======
+                            "x": 1897.39013671875,
+>>>>>>> 3b4dee5dfd76b7506fc30c2f1ec03aed6da41874
                             "y": 944.0
                         },
                         "rot": 0.0,

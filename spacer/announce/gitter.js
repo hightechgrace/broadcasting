@@ -58,3 +58,8 @@ G.currentUser().then(function(user) {
 		console.log('Sent: ' + flat);
 	})
 });
+
+
+setInterval( function () {
+	console.log('Gitter bot still doing nothing');
+}, 45 * 60 * 1000);
