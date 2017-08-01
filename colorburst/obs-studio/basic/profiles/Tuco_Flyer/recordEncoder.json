@@ -1,0 +1,7 @@
+{
+    "bitrate": 12000,
+    "keyint_sec": 2,
+    "preset": "hq",
+    "profile": "high",
+    "rate_control": "CBR"
+}

@@ -1,6 +1,6 @@
 {
-    "current_program_scene": "Scene",
-    "current_scene": "Scene",
+    "current_program_scene": "Main",
+    "current_scene": "Main",
     "current_transition": "Fade",
     "modules": {
         "auto-scene-switcher": {
@@ -26,19 +26,19 @@
             "streamTimerSeconds": 0
         }
     },
-    "name": "Microscope Grabber",
+    "name": "Tuco Flyer",
     "preview_locked": true,
     "quick_transitions": [
         {
             "duration": 300,
             "hotkeys": [],
-            "id": 1,
+            "id": 3,
             "name": "Cut"
         },
         {
             "duration": 300,
             "hotkeys": [],
-            "id": 2,
+            "id": 4,
             "name": "Fade"
         }
     ],
@@ -106,42 +106,13 @@
             "saved_projectors": ""
         }
     ],
-    "scaling_mode": 0,
+    "scaling_mode": 2,
     "scene_order": [
         {
-            "name": "Scene"
+            "name": "Main"
         }
     ],
     "sources": [
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 7,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "dshow_input",
-            "mixers": 255,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "HD60",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "audio_device_id": "Line (Elgato Sound Capture):",
-                "last_video_device_id": "Elgato Game Capture HD:__elgato",
-                "use_custom_audio_device": false,
-                "video_device_id": "Elgato Game Capture HD:__elgato"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
         {
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
@@ -149,14 +120,14 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.HD60": [],
-                "libobs.show_scene_item.HD60": []
+                "libobs.hide_scene_item.Blackmagic Device": [],
+                "libobs.show_scene_item.Blackmagic Device": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Scene",
+            "name": "Main",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -166,16 +137,16 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 2560.0,
-                            "y": 1440.0
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds_align": 0,
-                        "bounds_type": 2,
+                        "bounds_type": 0,
                         "crop_bottom": 0,
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "name": "HD60",
+                        "name": "Blackmagic Device",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -189,6 +160,35 @@
                         "visible": true
                     }
                 ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "decklink-input",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Blackmagic Device",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "device_hash": "2614829735_DeckLink Mini Recorder",
+                "device_name": "DeckLink Mini Recorder",
+                "mode_id": 9,
+                "mode_name": "1080p30"
             },
             "sync": 0,
             "volume": 1.0

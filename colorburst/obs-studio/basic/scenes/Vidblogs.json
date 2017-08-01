@@ -22,11 +22,11 @@
         "settings": {
             "device_id": "{0.0.1.00000000}.{b3553c5d-7070-4b81-a1e5-0fa646db1014}"
         },
-        "sync": 0,
+        "sync": 140000000,
         "volume": 1.0
     },
-    "current_program_scene": "Slides",
-    "current_scene": "Slides",
+    "current_program_scene": "Computer and Microscope",
+    "current_scene": "Computer and Microscope",
     "current_transition": "Cut",
     "modules": {
         "auto-scene-switcher": {
@@ -119,7 +119,7 @@
             "saved_projectors": ""
         }
     ],
-    "scaling_mode": 0,
+    "scaling_mode": 2,
     "scene_order": [
         {
             "name": "AirServer"
@@ -2706,7 +2706,11 @@
                         "crop_top": 0,
                         "name": "Text (GDI+)",
                         "pos": {
+<<<<<<< HEAD
+                            "x": 2005.0244140625,
+=======
                             "x": 1897.39013671875,
+>>>>>>> 3b4dee5dfd76b7506fc30c2f1ec03aed6da41874
                             "y": 944.0
                         },
                         "rot": 0.0,
