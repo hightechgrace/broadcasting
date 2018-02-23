@@ -1,5 +1,4 @@
 {
-    "keyint_sec": 2,
-    "profile": "baseline",
-    "rate_control": "CBR"
+    "bitrate": 3500,
+    "keyint_sec": 2
 }

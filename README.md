@@ -1,6 +1,11 @@
 # Broadcasting
 Configuration and scripts for the live video broadcast rig.
 
+Video Tour from September 2017:
+
+* [Tour of the filming setup starts at 17:35](https://www.youtube.com/watch?v=Xj2yoB4EZuY&t=1055s)
+* [I open up the rack for a tour at 57:57](https://www.youtube.com/watch?v=Xj2yoB4EZuY&t=3477s)
+
 Not sure if anyone else will find this stuff useful, it's here mostly as a backup / archive for my own use. The repository is organized by physical machine:
 
 * `colorburst` is the main broadcast and sound machine

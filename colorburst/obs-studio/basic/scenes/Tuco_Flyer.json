@@ -10,11 +10,6 @@
             "switch_if_not_matching": false,
             "switches": []
         },
-        "captions": {
-            "enabled": false,
-            "lang_id": 1033,
-            "source": ""
-        },
         "output-timer": {
             "autoStartRecordTimer": false,
             "autoStartStreamTimer": false,
@@ -27,7 +22,7 @@
         }
     },
     "name": "Tuco Flyer",
-    "preview_locked": true,
+    "preview_locked": false,
     "quick_transitions": [
         {
             "duration": 300,
@@ -106,7 +101,10 @@
             "saved_projectors": ""
         }
     ],
-    "scaling_mode": 2,
+    "scaling_enabled": false,
+    "scaling_level": 0,
+    "scaling_off_x": 0.0,
+    "scaling_off_y": 0.0,
     "scene_order": [
         {
             "name": "Main"
@@ -117,23 +115,150 @@
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
+            "filters": [
+                {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "color_filter",
+                    "mixers": 0,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Color Correction",
+                    "private_settings": {},
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "hue_shift": -0.20000000000000001,
+                        "opacity": 38
+                    },
+                    "sync": 0,
+                    "volume": 1.0
+                }
+            ],
+            "flags": 0,
+            "hotkeys": {},
+            "id": "image_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Scanlime",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "file": "C:/Users/micah/Documents/GitHub/broadcasting/colorburst/obs-studio/assets/sprites/scanlime-logo-gray-translucent.png"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "filters": [
+                {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "color_filter",
+                    "mixers": 0,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Color Correction",
+                    "private_settings": {},
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "opacity": 65
+                    },
+                    "sync": 0,
+                    "volume": 1.0
+                }
+            ],
+            "flags": 0,
+            "hotkeys": {},
+            "id": "image_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Tuco Flyer Logo",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "file": "C:/Users/micah/Documents/GitHub/broadcasting/colorburst/obs-studio/assets/sprites/tuco-flyer.png"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Blackmagic Device": [],
-                "libobs.show_scene_item.Blackmagic Device": []
+                "libobs.hide_scene_item.Flyer Camera": [],
+                "libobs.hide_scene_item.Scanlime": [],
+                "libobs.hide_scene_item.Tuco Flyer Logo": [],
+                "libobs.show_scene_item.Flyer Camera": [],
+                "libobs.show_scene_item.Scanlime": [],
+                "libobs.show_scene_item.Tuco Flyer Logo": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "Main",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
+                "id_counter": 8,
                 "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 6,
+                        "locked": true,
+                        "name": "Flyer Camera",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
                     {
                         "align": 5,
                         "bounds": {
@@ -146,17 +271,48 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "name": "Blackmagic Device",
+                        "id": 7,
+                        "locked": true,
+                        "name": "Tuco Flyer Logo",
                         "pos": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 1480.0,
+                            "y": 999.0
                         },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.51886790990829468,
+                            "y": 0.51923078298568726
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 335.0,
+                            "y": 237.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 8,
+                        "locked": true,
+                        "name": "Scanlime",
+                        "pos": {
+                            "x": 21.0,
+                            "y": 832.0
+                        },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
                             "y": 1.0
                         },
-                        "scale_filter": "disable",
+                        "scale_filter": "bilinear",
                         "visible": true
                     }
                 ]
@@ -168,6 +324,31 @@
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
+            "filters": [
+                {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "flyer_camera_filter",
+                    "mixers": 0,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Flyer Camera Filter",
+                    "private_settings": {},
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "connection_file_path": "C:/Users/micah/Documents/GitHub/Bot-Controller/connection.txt",
+                        "overlay_texture_path": "C:/Users/micah/Documents/GitHub/Bot-Controller/images/overlay.png"
+                    },
+                    "sync": 0,
+                    "volume": 1.0
+                }
+            ],
             "flags": 0,
             "hotkeys": {
                 "libobs.mute": [],
@@ -179,16 +360,18 @@
             "mixers": 255,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Blackmagic Device",
+            "name": "Flyer Camera",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
+                "buffering": false,
                 "device_hash": "2614829735_DeckLink Mini Recorder",
                 "device_name": "DeckLink Mini Recorder",
-                "mode_id": 9,
-                "mode_name": "1080p30"
+                "mode_id": -1,
+                "mode_name": "Auto"
             },
             "sync": 0,
             "volume": 1.0
