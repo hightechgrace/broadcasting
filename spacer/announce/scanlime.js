@@ -23,9 +23,10 @@ if (this_is_not_a_test) {
 
 var grammar = tracery.createGrammar({
 
-    'youtube_url': ['https://www.youtube.com/MElizabethScott/live'],
+    'youtube_url': ['https://www.youtube.com/channel/UC8G48_G7suQlScUudVXyGkg/live'],
     'twitch_url': ['https://www.twitch.tv/scanlime'],
     'any_url': [ '#youtube_url#', '#twitch_url#' ],
+    'both_urls': [ '#youtube_url# #twitch_url#', '#twitch_url# #youtube_url#' ],
 
     'main_hashtag': [ '\\#scanlimelive' ],
     'continued_hashtag': [ '\\#scanlimecont' ],
@@ -66,8 +67,8 @@ var grammar = tracery.createGrammar({
     'lastContent': [ 'cat', 'cat', 'cat', 'kitty', 'little tiger', 'purr monster', 'fluff tiger', 'fluffy labmate', 'Tuco the cat' ],
 
     'gitter_msg': ['#starting# #content# #youtube_url#'],
-    'first_tweet': ['#starting# #content# #main_hashtag# #any_url#'],
-    'periodic_tweet': ['#continuing# #content# #continued_hashtag# #any_url#']
+    'first_tweet': ['#starting# #content# #main_hashtag# #both_urls#'],
+    'periodic_tweet': ['#continuing# #content# #continued_hashtag# #both_urls#']
 });
 
 grammar.addModifiers(tracery.baseEngModifiers);
