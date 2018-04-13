@@ -21,6 +21,7 @@ Not sure if anyone else will find this stuff useful, it's here mostly as a backu
 	* Tuco Flyer Video
 		* Black Magic Mini Recorder PCI card, 1x SDI input
 		* Additional copy of obs-studio
+		* Computer vision running on an Nvidia GTX 1080
 		* Encoding 1080p30 at 2500kBps in software with x264
 	* Local Audio
 		* On-board sound playback (general shop utility, playing music)
@@ -45,19 +46,20 @@ Not sure if anyone else will find this stuff useful, it's here mostly as a backu
 	* Also a good place to run the status display.
 
 * `fishbowl` is the demo machine
-   * It's a Mac Mini. No special software needed for broadcast there.
-   * 4x HDMI switch for sharing this input with other demo objects is `fishplex`.
-   * This HDMI input is split to a monitor, HD60 recorder on `cylindroid`, and a USB3.0 HDMI grabber on `colorburst`.
+	* It's a Mac Mini. No special software needed for broadcast there.
+	* 4x HDMI switch for sharing this input with other demo objects is `fishplex`.
+	* This HDMI input is split to a monitor, HD60 recorder on `cylindroid`, and a USB3.0 HDMI grabber on `colorburst`.
 
-* `cylindroid` is the editing and file management workstation
-	* Mac Pro, local thunderbolt RAID for editing and recording
-	* Final Cut Pro X (blah)
-	* Direct recording for oscilloscope (BlackMagic+OBS) and `fishplex` (HD60).
+* `cylindroid` used to be my main editing workstation, now it's mostly file management
+   	* Mac Pro, local thunderbolt RAID
+   	* Backups
+   	* Direct recording for oscilloscope (BlackMagic+OBS) and `fishplex` (HD60).
 
-* `brassica` is the CAD workstation
-   * Rhino license is stuck on this box
-   * Nice GPU here
-   * Direct recording for the microscope (HD60+OBS).
+* `brassica` is the CAD and editing workstation
+   	* Adobe Premiere and After Effects
+   	* Rhino license is stuck on this box
+   	* Nice GPU here
+   	* Direct recording for the microscope (HD60+OBS).
    
 * Other Hardware
 	* LED panel lights: Fovitec dual temperature
