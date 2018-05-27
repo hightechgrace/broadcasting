@@ -3,22 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=640, initial-scale=1">
-  <link href="https://vjs.zencdn.net/7.0.3/video-js.css" rel="stylesheet">
+  <link href="/video-js.css" rel="stylesheet">
   <style>
     body {
       background: black;
       margin: 0;
     }
     .video-js {
+      position: absolute;
       width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
     }
   </style>
 </head>
 <body>
-  <video class="video-js vjs-default-skin" autoplay controls preload="auto" width="640" height="720"
-  data-setup='{}'>
-    <source src="/hls/test.m3u8" type='application/vnd.apple.mpegurl'>
+  <video class="video-js vjs-default-skin" autoplay controls preload="auto" data-setup='{}'>
+    <source src="/hls/stream.m3u8" type='application/vnd.apple.mpegurl'>
   </video>
-  <script src="https://vjs.zencdn.net/7.0.3/video.js"></script>
+  <script src="/video.js"></script>
 </body>
 </html>
