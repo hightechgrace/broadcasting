@@ -1,24 +1,37 @@
 var Gitter = require('node-gitter');
 var Twit = require('twit');
+var Mastodon = require('mastodon');
 var fs = require('fs');
 var tracery = require('tracery-grammar');
-var post_screenshot = require('./post-screenshot');
+var Jimp = require('jimp');
+var async = require('async')
+var fs = require('fs');
+var path = require('path');
 
+var screenshot_dir = '/var/rec';
+var temp_jpg_path = '/var/rec/scanlime.toot.jpg';
 var timestamp_path = '/var/rec/scanlime.timestamp';
-var tweet_length = 140;
+var social_post_length = 280;
 
-//var minutes_between_tweets = 1;
+//var minutes_between_posts = 1;
 //var this_is_not_a_test = false;
-var minutes_between_tweets = 80;
+var minutes_between_posts = 80;
 var this_is_not_a_test = true;
 
 var tMain = null;
 var tBot = null;
 var G = null;
+var Toot = null;
+
 if (this_is_not_a_test) {
     tMain = new Twit(require('./scanlime_account.json'));
     tBot = new Twit(require('./scanlimelive_account.json'));
     G = new Gitter(require('./gitter_account.json').token);
+    Toot = new Mastodon(require('./socialcoop_account.json'));
+} else {
+    tMain = new Twit(require('./robotbabyhw_account.json'));
+    tBot = new Twit(require('./robotbabyhw_account.json'));
+    Toot = new Mastodon(require('./botsinspace_account.json'));
 }
 
 var grammar = tracery.createGrammar({
@@ -67,33 +80,98 @@ var grammar = tracery.createGrammar({
     'lastContent': [ 'cat', 'cat', 'cat', 'kitty', 'little tiger', 'purr monster', 'fluff tiger', 'fluffy labmate', 'Tuco the cat' ],
 
     'gitter_msg': ['#starting# #content# #youtube_url#'],
-    'first_tweet': ['#starting# #content# #main_hashtag# #both_urls#'],
-    'periodic_tweet': ['#continuing# #content# #continued_hashtag# #both_urls#']
+    'first_social_post': ['#starting# #content# #main_hashtag# #both_urls#'],
+    'periodic_social_post': ['#continuing# #content# #continued_hashtag# #both_urls#']
 });
 
 grammar.addModifiers(tracery.baseEngModifiers);
 
-function tweet(template, media_ids) {
+function get_screenshot(cb)
+{
+    // let's rewrite this to use modern async and promises soon
+
+    fs.readdir(screenshot_dir, function (err, files) {
+        if (err) return cb(err);
+
+        // Keyframe-looking files, starting with recent ones
+        var candidates = files.filter( function (f) {
+            return f.startsWith('kf-') && f.endsWith('.png');
+        });
+        candidates.sort();
+        candidates.reverse();
+
+        // Post the latest one we can parse and compress
+        async.detectSeries(candidates, function (item, series_cb) {
+            Jimp.read(path.join(screenshot_dir, item), function (err, img) {
+                if (err) series_cb(null, false);  // Not an image, skip it
+                img.getBuffer(Jimp.MIME_JPEG, function (err, jpg) {
+                    cb(null, jpg);
+                    series_cb(null, true);
+                });
+            });
+        });
+    });
+}
+
+function social_post(template, media) {
     var flat;
     do {
         flat = grammar.flatten(template);
-    } while (flat.length > tweet_length);
+    } while (flat.length > social_post_length);
+
     if (tBot) {
-        tBot.post('statuses/update', { status: flat, media_ids: media_ids }, function (err, data) {
-            if (err) {
-                console.log(err);
-            } else {
-                console.log('Tweet ' + data.id_str + ' sent: ' + data.text);
-                if (tMain) {
-                    tMain.post('statuses/retweet/:id', { id: data.id_str }, function (err, data) {
-                        console.log('Retweeted on main account');
-                    });
+        function post_tweet(media_ids) {
+            tBot.post('statuses/update', {
+                status: flat, media_ids
+            }, function (err, data) {
+                if (err) {
+                    console.log(err);
+                } else {
+                    console.log('Tweet ' + data.id_str + ' sent: ' + data.text);
+                    if (tMain) {
+                        tMain.post('statuses/retweet/:id', { id: data.id_str }, function (err) {
+                            console.log('Retweeted on main account');
+                        });
+                    }
                 }
-            }
-        });
-    } else {
-        console.log('Would tweet: ', flat);
+            });
+        }
+
+        if (media) {
+            tBot.post('media/upload', { media_data: media.toString('base64') }, function (err, data) {
+                if (err) {
+                    console.log(err);
+                    post_tweet([]);
+                } else {
+                    post_tweet([ data.media_id_string ]);
+                }
+            });
+        } else {
+            post_tweet([]);
+        }
     }
+
+    if (Toot) {
+        function post_toot(media_ids) {
+            Toot.post('statuses', {
+                status: flat, media_ids
+            }).then(function (resp) {
+                console.log('Toot sent, ' + resp.data.uri);
+            });
+        }
+
+        if (media) {
+            fs.writeFile(temp_jpg_path, media, function (err) {
+                if (err) return console.log(err);
+                Toot.post('media', { file: fs.createReadStream(temp_jpg_path) }).then(function (resp) {
+                    post_toot([ resp.data.id ]);
+                });
+            });
+        } else {
+            post_toot([]);
+        }
+    }
+
     fs.closeSync(fs.openSync(timestamp_path, 'w'));
 }
 
@@ -113,7 +191,7 @@ function gitter_post(template) {
     }
 }
 
-function minutes_since_last_tweet() {
+function minutes_since_last_post() {
     var mtime = 0;
     try {
         mtime = fs.statSync(timestamp_path).mtime.getTime();
@@ -121,15 +199,15 @@ function minutes_since_last_tweet() {
     return (new Date().getTime() - mtime) / (60 * 1000.0);
 }
 
-if (minutes_since_last_tweet() > minutes_between_tweets) {
-    tweet('#first_tweet#');
+if (minutes_since_last_post() > minutes_between_posts) {
+    social_post('#first_social_post#');
     gitter_post('#gitter_msg#');
 }
 
 setInterval( function () {
-    if (minutes_since_last_tweet() > minutes_between_tweets) {
-        post_screenshot( tBot, function (err, data) {
-            tweet('#periodic_tweet#', [ data.media_id_string ] );
+    if (minutes_since_last_post() > minutes_between_posts) {
+        get_screenshot(function (err, media_buffer) {
+            social_post('#periodic_social_post#', media_buffer);
         });
     }
 }, 10000);
