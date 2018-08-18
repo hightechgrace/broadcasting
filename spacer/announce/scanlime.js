@@ -156,6 +156,8 @@ function social_post(template, media) {
             Toot.post('statuses', {
                 status: flat,
                 visibility: 'unlisted',
+                spoiler_text: 'streaming bot',
+                sensitive: false,
                 media_ids
             }).then(function (resp) {
                 console.log('Toot sent, ' + resp.data.uri);
