@@ -49,7 +49,7 @@ var grammar = tracery.createGrammar({
     'shop': [ 'shop', 'shop', 'lab', 'electronics lab' ],
     'exclam': [ '!', '!', '!', '!', '!', '~', '.', '.', '.', '.', '!!' ],
     'excomma': [ ',', '#exclam#' ],
-    'excite': [ 'wow', 'whoa', 'neat', 'woww', 'cool' ],
+    'excite': [ 'neat', 'cool', 'alright', 'yeah' ],
 
     'starting': [
         'Getting another #stream# #started##exclam#',
@@ -154,7 +154,9 @@ function social_post(template, media) {
     if (Toot) {
         function post_toot(media_ids) {
             Toot.post('statuses', {
-                status: flat, media_ids
+                status: flat,
+                visibility: 'unlisted',
+                media_ids
             }).then(function (resp) {
                 console.log('Toot sent, ' + resp.data.uri);
             });
