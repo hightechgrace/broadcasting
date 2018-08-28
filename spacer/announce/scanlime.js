@@ -27,7 +27,7 @@ if (this_is_not_a_test) {
     tMain = new Twit(require('./scanlime_account.json'));
     tBot = new Twit(require('./scanlimelive_account.json'));
     G = new Gitter(require('./gitter_account.json').token);
-    Toot = new Mastodon(require('./socialcoop_account.json'));
+    Toot = new Mastodon(require('./kittytown_account.json'));
 } else {
     tMain = new Twit(require('./robotbabyhw_account.json'));
     tBot = new Twit(require('./robotbabyhw_account.json'));
