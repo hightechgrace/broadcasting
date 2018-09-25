@@ -38,7 +38,7 @@ var grammar = tracery.createGrammar({
 
     'diode_url': ['https://live.diode.zone/scanlime'],
     'youtube_url': ['https://www.youtube.com/channel/UC8G48_G7suQlScUudVXyGkg/live'],
-    'twitch_url': ['https://www.twitch.tv/scanlime'],
+    'twitch_url': ['www.twitch.tv/scanlime'],
     'all_urls': [ '#diode_url# #youtube_url# #twitch_url#', '#diode_url# #twitch_url# #youtube_url#' ],
 
     'main_hashtag': [ '\\#scanlimelive' ],
@@ -79,7 +79,7 @@ var grammar = tracery.createGrammar({
     'secondContent': [ 'video', 'experiments', 'science', 'reverse engineering', 'learning something', 'warm socks' ],
     'lastContent': [ 'cat', 'cat', 'cat', 'kitty', 'little tiger', 'purr monster', 'fluff tiger', 'fluffy labmate', 'Tuco the cat' ],
 
-    'gitter_msg': ['#starting# #content# #youtube_url#'],
+    'gitter_msg': ['#starting# #content# #all_urls#'],
     'first_social_post': ['#starting# #content# #main_hashtag# #all_urls#'],
     'periodic_social_post': ['#continuing# #content# #continued_hashtag# #all_urls#']
 });
