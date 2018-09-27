@@ -38,7 +38,7 @@ var grammar = tracery.createGrammar({
 
     'diode_url': ['https://live.diode.zone/scanlime'],
     'youtube_url': ['https://www.youtube.com/channel/UC8G48_G7suQlScUudVXyGkg/live'],
-    'twitch_url': ['www.twitch.tv/scanlime'],
+    'twitch_url': ['https://www.twitch.tv/scanlime'],
     'all_urls': [ '#diode_url# #youtube_url# #twitch_url#', '#diode_url# #twitch_url# #youtube_url#' ],
 
     'main_hashtag': [ '\\#scanlimelive' ],
