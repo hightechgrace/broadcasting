@@ -18,10 +18,8 @@ proc = ProcessPoller()
 dash = [
     FileSizePoller('cb', '/mnt/colorburst'),
     FileSizePoller('fsh', '/mnt/cylindroid/Game Capture HD Library'),
-    FileSizePoller('br', '/mnt/brassica'),
     FileSizePoller('cyo', '/mnt/cylindroid/obs'),
     ProcessMatch(proc, '#test', 'announce/test.js'),
-    ProcessMatch(proc, '#senrio', 'announce/senrio.js'),
     ProcessMatch(proc, '#scanlime', 'announce/scanlime.js'),
     ProcessMatch(proc, '+ffm', 'ffmpeg'),
 ]
