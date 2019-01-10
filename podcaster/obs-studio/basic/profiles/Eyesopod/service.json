@@ -1,0 +1,8 @@
+{
+    "settings": {
+        "key": "___________",
+        "server": "rtmp://________/hls",
+        "use_auth": false
+    },
+    "type": "rtmp_custom"
+}
