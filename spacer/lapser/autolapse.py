@@ -1,20 +1,20 @@
 #!/usr/bin/env python
 
-import os, time, subprocess
+import os, time, subprocess, re
 
 class MovieConverter:
 
-    def __init__(self, inputDirs, outputDir, inputSuffix='.mov'):
+    def __init__(self, inputDirs, outputDir, inputSuffixes=['.mov', '.mkv']):
         self.inputDirs = inputDirs
         self.outputDir = outputDir
-        self.inputSuffix = inputSuffix
+        self.inputSuffixes = inputSuffixes
         self._lastInputs = []
 
     def _collectInputSizes(self):
         files = []
         for d in self.inputDirs:
             for f in os.listdir(d):
-                if f.endswith(self.inputSuffix):
+                if os.path.splitext(f)[1] in self.inputSuffixes:
                     p = os.path.join(d, f)
                     try:
                         filesize = os.stat(p).st_size
@@ -35,7 +35,7 @@ class MovieConverter:
         return os.path.join(self.outputDir, '%s-x%d.m4v' % (slug, speedup))
 
     def processFile(self, original):
-        slug = os.path.basename(original[:-len(self.inputSuffix)])
+        slug = re.sub(r'^-', '', re.subn(r'[/\\]', '-', os.path.splitext(original)[0])[0])
         self._lapserStage(original, self._outFile(slug, 16), 4)
         self._lapserStage(self._outFile(slug, 16), self._outFile(slug, 32), 1)
         self._lapserStage(self._outFile(slug, 16), self._outFile(slug, 64), 2)
@@ -68,7 +68,8 @@ if __name__ == '__main__':
     mc = MovieConverter([
         '/mnt/colorburst',
         '/mnt/brassica',
-        '/mnt/cylindroid/obs'
+        '/mnt/cylindroid/obs',
+        '/mnt/podcaster',
     ],  '/mnt/colorburst')
     while True:
         time.sleep(5)
