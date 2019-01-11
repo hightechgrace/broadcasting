@@ -4,7 +4,7 @@ import os, time, subprocess, re
 
 class MovieConverter:
 
-    def __init__(self, inputDirs, outputDir, inputSuffixes=['.mov', '.mkv']):
+    def __init__(self, inputDirs, outputDir, inputSuffixes=['.mov', '.mkv', '.flv']):
         self.inputDirs = inputDirs
         self.outputDir = outputDir
         self.inputSuffixes = inputSuffixes
