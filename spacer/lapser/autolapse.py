@@ -72,5 +72,5 @@ if __name__ == '__main__':
         '/mnt/podcaster',
     ],  '/mnt/colorburst')
     while True:
-        time.sleep(5)
+        time.sleep(10)
         mc.poll()
