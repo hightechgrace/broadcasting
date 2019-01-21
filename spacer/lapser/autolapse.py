@@ -32,10 +32,11 @@ class MovieConverter:
         self._lastInputs = inputs
 
     def _outFile(self, slug, speedup):
-        return os.path.join(self.outputDir, '%s-x%d.m4v' % (slug, speedup))
+        return os.path.join(self.outputDir, '%s-x%d.mp4' % (slug, speedup))
 
     def processFile(self, original):
         slug = re.sub(r'^-', '', re.subn(r'[/\\]', '-', os.path.splitext(original)[0])[0])
+        self._remux(original, os.path.join(self.outputDir, '%s-remux.mp4' % slug))
         self._lapserStage(original, self._outFile(slug, 16), 4)
         self._lapserStage(self._outFile(slug, 16), self._outFile(slug, 32), 1)
         self._lapserStage(self._outFile(slug, 16), self._outFile(slug, 64), 2)
@@ -46,16 +47,28 @@ class MovieConverter:
         self._lapserStage(self._outFile(slug, 256), self._outFile(slug, 2048), 3)
         self._lapserStage(self._outFile(slug, 256), self._outFile(slug, 4096), 4)
 
+    def _remux(self, input, output):
+        self._ffmpeg(['-i', input, '-c:v', 'copy', '-c:a', 'copy'], output)
+
     def _lapserStage(self, input, output, log2):
+        vf = ('tblend=average,framestep=2,' * log2) + ('setpts=%f*PTS' % (1.0 / (1 << log2)))
+        self._ffmpeg([
+            '-c:v', 'h264_cuvid',
+            '-i', input,
+            '-vf', vf,
+            '-an', '-r', '30',
+            '-c:v', 'h264_nvenc', '-profile:v', 'high',
+            '-preset:v', 'default', '-b:v', '12000k'
+        ], output)
+
+    def _ffmpeg(self, options, output):
         tempout = os.path.join(os.path.dirname(output), 'temp-' + os.path.basename(output))
         if os.path.isfile(tempout):
             os.unlink(tempout)
         try:
-            if os.path.isfile(input) and not os.path.isfile(output):
-                vf = ('tblend=average,framestep=2,' * log2) + ('setpts=%f*PTS' % (1.0 / (1 << log2)))
+            if not os.path.isfile(output):
                 try:
-                    subprocess.check_call(['ffmpeg', '-c:v', 'h264_cuvid', '-i', input, '-vf', vf, '-an', '-r', '30',
-                        '-c:v', 'h264_nvenc', '-profile:v', 'high', '-preset:v', 'default', '-b:v', '12000k', tempout])
+                    subprocess.check_call(['ffmpeg'] + options + [tempout])
                     os.rename(tempout, output)
                 except subprocess.CalledProcessError:
                     pass
@@ -66,11 +79,11 @@ class MovieConverter:
 
 if __name__ == '__main__':
     mc = MovieConverter([
-        '/mnt/colorburst',
+        '/mnt/colorburst/obs',
         '/mnt/brassica',
         '/mnt/cylindroid/obs',
         '/mnt/podcaster',
-    ],  '/mnt/colorburst')
+    ],  '/mnt/colorburst/lapser')
     while True:
-        time.sleep(10)
+        time.sleep(15)
         mc.poll()
