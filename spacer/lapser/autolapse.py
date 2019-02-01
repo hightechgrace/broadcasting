@@ -45,8 +45,11 @@ class MovieConverter:
         self._lapserStage(self._outFile(slug, 256), self._outFile(slug, 512), 1)
         self._lapserStage(self._outFile(slug, 256), self._outFile(slug, 1024), 2)
         self._lapserStage(self._outFile(slug, 256), self._outFile(slug, 2048), 3)
-        self._lapserStage(self._outFile(slug, 256), self._outFile(slug, 4096), 4)
 
+        self._lapserStage(self._outFile(slug, 256), self._outFile(slug, 4096), 4)
+        self._lapserStage(self._outFile(slug, 4096), self._outFile(slug, 8192), 1)
+        self._lapserStage(self._outFile(slug, 4096), self._outFile(slug, 16384), 2)
+        self._lapserStage(self._outFile(slug, 4096), self._outFile(slug, 32768), 3)
     def _remux(self, input, output):
         self._ffmpeg(['-i', input, '-c:v', 'copy', '-c:a', 'copy'], output)
 
