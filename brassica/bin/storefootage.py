@@ -3,14 +3,14 @@
 import os, sys, time, shutil
 
 if len(sys.argv) < 3:
-    print "usage: %s source_files... target_directory" % sys.argv[0]
+    print("usage: %s source_files... target_directory" % sys.argv[0])
     sys.exit(1)
 
 source_files = sys.argv[1:-1]
 target_directory = sys.argv[-1]
 
 if not os.path.isdir(target_directory):
-    print "not a directory: %s" % target_directory
+    print("not a directory: %s" % target_directory)
     sys.exit(1)
 
 ops = []
@@ -25,8 +25,8 @@ def process_file(src_file):
     if os.path.isdir(src_file):
         try:
             listing = os.listdir(src_file)
-        except OSError, e:
-            print("Skipping inaccessible directory %s, %s" % (src_file, e))
+        except OSError as e:
+            print(("Skipping inaccessible directory %s, %s" % (src_file, e)))
             return
         for f in listing:
             process_file(os.path.join(src_file, f))
@@ -53,7 +53,7 @@ def process_file(src_file):
 
     if not os.path.isfile(dest_file):
         ops.append((src_file, dest_file))
-        print('preparing move: %s -> %s' % (src_file, dest_file))
+        print(('preparing move: %s -> %s' % (src_file, dest_file)))
 
 def atomic_move(src_file, dest_file):
     temp_file = dest_file + '-temp'
@@ -61,18 +61,18 @@ def atomic_move(src_file, dest_file):
     try:
         shutil.copy2(src_file, temp_file)
         os.rename(temp_file, dest_file)
-    except Exception, e:
-        print('FAILED while copying %s to %s, leaving file. %s' % (src_file, dest_file, e))
+    except Exception as e:
+        print(('FAILED while copying %s to %s, leaving file. %s' % (src_file, dest_file, e)))
         return
     if os.stat(src_file).st_size == os.stat(dest_file).st_size:
         try:
             os.rename(src_file, old_file)
             cleanup_queue.append(old_file)
-            print('finished: %s -> %s' % (src_file, dest_file))
-        except Exception, e:
-            print('ERROR while cleaning up, leaving file. Tried to rename %s to %s, %s' % (src_file, old_file, e))
+            print(('finished: %s -> %s' % (src_file, dest_file)))
+        except Exception as e:
+            print(('ERROR while cleaning up, leaving file. Tried to rename %s to %s, %s' % (src_file, old_file, e)))
     else:
-        print('MISMATCH, changed while copying? leaving file. %s' % src_file)
+        print(('MISMATCH, changed while copying? leaving file. %s' % src_file))
 
 for src_file in source_files:
     process_file(src_file)
