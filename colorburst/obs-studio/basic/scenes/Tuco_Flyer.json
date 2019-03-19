@@ -1,4 +1,31 @@
 {
+    "AuxAudioDevice1": {
+        "deinterlace_field_order": 0,
+        "deinterlace_mode": 0,
+        "enabled": true,
+        "flags": 0,
+        "hotkeys": {
+            "libobs.mute": [],
+            "libobs.push-to-mute": [],
+            "libobs.push-to-talk": [],
+            "libobs.unmute": []
+        },
+        "id": "wasapi_input_capture",
+        "mixers": 255,
+        "monitoring_type": 0,
+        "muted": true,
+        "name": "Mic/Aux",
+        "private_settings": {},
+        "push-to-mute": false,
+        "push-to-mute-delay": 0,
+        "push-to-talk": false,
+        "push-to-talk-delay": 0,
+        "settings": {
+            "device_id": "{0.0.1.00000000}.{21e15d20-f3e0-46dd-bb13-4f2392305067}"
+        },
+        "sync": 0,
+        "volume": 0.83058398962020874
+    },
     "current_program_scene": "Main",
     "current_scene": "Main",
     "current_transition": "Fade",
@@ -22,7 +49,7 @@
         }
     },
     "name": "Tuco Flyer",
-    "preview_locked": false,
+    "preview_locked": true,
     "quick_transitions": [
         {
             "duration": 300,
@@ -35,6 +62,38 @@
             "hotkeys": [],
             "id": 4,
             "name": "Fade"
+        }
+    ],
+    "saved_multiview_projectors": [
+        {
+            "saved_multiview_projectors": 0
+        },
+        {
+            "saved_multiview_projectors": 0
+        },
+        {
+            "saved_multiview_projectors": 0
+        },
+        {
+            "saved_multiview_projectors": 0
+        },
+        {
+            "saved_multiview_projectors": 0
+        },
+        {
+            "saved_multiview_projectors": 0
+        },
+        {
+            "saved_multiview_projectors": 0
+        },
+        {
+            "saved_multiview_projectors": 0
+        },
+        {
+            "saved_multiview_projectors": 0
+        },
+        {
+            "saved_multiview_projectors": 0
         }
     ],
     "saved_preview_projectors": [
@@ -101,16 +160,253 @@
             "saved_projectors": ""
         }
     ],
+    "saved_studio_preview_projectors": [
+        {
+            "saved_studio_preview_projectors": 0
+        },
+        {
+            "saved_studio_preview_projectors": 0
+        },
+        {
+            "saved_studio_preview_projectors": 0
+        },
+        {
+            "saved_studio_preview_projectors": 0
+        },
+        {
+            "saved_studio_preview_projectors": 0
+        },
+        {
+            "saved_studio_preview_projectors": 0
+        },
+        {
+            "saved_studio_preview_projectors": 0
+        },
+        {
+            "saved_studio_preview_projectors": 0
+        },
+        {
+            "saved_studio_preview_projectors": 0
+        },
+        {
+            "saved_studio_preview_projectors": 0
+        }
+    ],
     "scaling_enabled": false,
     "scaling_level": 0,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "scene_order": [
         {
+            "name": "Stand By"
+        },
+        {
             "name": "Main"
         }
     ],
     "sources": [
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "text_gdiplus",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Text - stand by",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "font": {
+                    "face": "Lucida Console",
+                    "flags": 0,
+                    "size": 120,
+                    "style": "Regular"
+                },
+                "text": "[ Please stand by ]\n> Loading cat...\n"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "MediaSource.Restart": [],
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "ffmpeg_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": true,
+            "name": "Relaxing Tuco Clip",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "local_file": "C:/Users/micah/Dropbox/colorburst/obs-studio/assets/clips/relaxed-tuco.mov",
+                "looping": true
+            },
+            "sync": 0,
+            "volume": 0.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Flyer Camera": [],
+                "libobs.hide_scene_item.Relaxing Tuco Clip": [],
+                "libobs.hide_scene_item.Text - stand by": [],
+                "libobs.show_scene_item.Flyer Camera": [],
+                "libobs.show_scene_item.Relaxing Tuco Clip": [],
+                "libobs.show_scene_item.Text - stand by": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Stand By",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "id_counter": 3,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 3,
+                        "locked": false,
+                        "name": "Flyer Camera",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 1,
+                        "locked": false,
+                        "name": "Relaxing Tuco Clip",
+                        "pos": {
+                            "x": 2631.0,
+                            "y": 1654.9993896484375
+                        },
+                        "private_settings": {},
+                        "rot": 180.0,
+                        "scale": {
+                            "x": 1.5510417222976685,
+                            "y": 1.5509259700775146
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 2,
+                        "locked": false,
+                        "name": "Text - stand by",
+                        "pos": {
+                            "x": 54.0,
+                            "y": 47.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "MediaSource.Restart": [],
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "ffmpeg_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": true,
+            "name": "3D Printer",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "input": "rtsp://admin:4889374128@10.1.7.103/cam/realmonitor?channel=1&subtype=0",
+                "is_local_file": false
+            },
+            "sync": 0,
+            "volume": 0.0
+        },
         {
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
@@ -134,7 +430,7 @@
                     "push-to-talk-delay": 0,
                     "settings": {
                         "hue_shift": -0.20000000000000001,
-                        "opacity": 38
+                        "opacity": 40
                     },
                     "sync": 0,
                     "volume": 1.0
@@ -211,9 +507,11 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.3D Printer": [],
                 "libobs.hide_scene_item.Flyer Camera": [],
                 "libobs.hide_scene_item.Scanlime": [],
                 "libobs.hide_scene_item.Tuco Flyer Logo": [],
+                "libobs.show_scene_item.3D Printer": [],
                 "libobs.show_scene_item.Flyer Camera": [],
                 "libobs.show_scene_item.Scanlime": [],
                 "libobs.show_scene_item.Tuco Flyer Logo": []
@@ -229,7 +527,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "id_counter": 8,
+                "id_counter": 10,
                 "items": [
                     {
                         "align": 5,
@@ -244,7 +542,7 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 6,
-                        "locked": true,
+                        "locked": false,
                         "name": "Flyer Camera",
                         "pos": {
                             "x": 0.0,
@@ -258,6 +556,34 @@
                         },
                         "scale_filter": "disable",
                         "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 10,
+                        "locked": false,
+                        "name": "3D Printer",
+                        "pos": {
+                            "x": 1312.0,
+                            "y": -65.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.29296875,
+                            "y": 0.29320988059043884
+                        },
+                        "scale_filter": "lanczos",
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -312,7 +638,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
-                        "scale_filter": "bilinear",
+                        "scale_filter": "point",
                         "visible": true
                     }
                 ]
@@ -359,7 +685,7 @@
             "id": "decklink-input",
             "mixers": 255,
             "monitoring_type": 0,
-            "muted": false,
+            "muted": true,
             "name": "Flyer Camera",
             "private_settings": {},
             "push-to-mute": false,
@@ -368,15 +694,16 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "buffering": false,
-                "device_hash": "2614829735_DeckLink Mini Recorder",
-                "device_name": "DeckLink Mini Recorder",
+                "color_range": 0,
+                "device_hash": "1905448465_DeckLink Duo 2",
+                "device_name": "DeckLink Duo (2)",
                 "mode_id": -1,
                 "mode_name": "Auto"
             },
             "sync": 0,
-            "volume": 1.0
+            "volume": 0.0
         }
     ],
-    "transition_duration": 300,
+    "transition_duration": 250,
     "transitions": []
 }
