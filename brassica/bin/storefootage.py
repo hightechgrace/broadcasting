@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+# Parallel version of storefootage
+# -micah
+
 import os, sys, time, shutil, subprocess
 from multiprocessing import Pool
 
@@ -91,7 +94,10 @@ def main():
 
     pool = Pool(10)
     pool.map(atomic_move, ops)
+    print('done')
 
 if __name__ == '__main__':
-    main()
-
+    try:
+        main()
+    finally:
+        input('waiting>')
